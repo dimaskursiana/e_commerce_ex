@@ -1,2 +1,2 @@
 # e_commerce_ex
-contoh eccomerce
+new setup
