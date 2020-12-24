@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-us">
+@{
+    Layout = null;
+}
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="BENEMICA" />
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="~/Content/css/Merriweather.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/dark.css" rel="stylesheet" />
+
+    <!-- Media Agency Demo Specific Stylesheet -->
+    <link href="~/Content/demos/app-landing/app-landing.css" rel="stylesheet" />
+    <!-- / -->
+    <link href="~/Content/css/font-icons.css" rel="stylesheet" />
+    <link href="~/Content/one-page/css/et-line.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/css/magnific-popup.css" rel="stylesheet" />
+
+    <!-- Date & Time Picker CSS -->
+    <link href="~/Content/css/components/datepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/components/timepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/components/daterangepicker.css" rel="stylesheet" />
+
+    <link href="~/Content/demos/app-landing/css/fonts.css" rel="stylesheet" />
+
+    <!-- Bootstrap Switch CSS -->
+    <link href="~/Content/css/components/bs-switches.css" rel="stylesheet" />
+
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="~/Content/demos/app-landing/css/colors.css" rel="stylesheet" />
+
+    <!--New YourStyle CSS-->
+    <link href="~/Content/your_style.css?v006" rel="stylesheet" />
+
+    <!-- Document Title
+    ============================================= -->
+    <title>Terms and Conditions of Use | BENEMICA</title>
+    <meta name="description" content="Terms and Conditions of Use Benemica">
+    <meta property="og:title" content="Terms and Conditions of Use | BENEMICA" />
+    <meta property="og:url" content="https://www.benemica.com/termsprivacy/termsofuse" />
+    <meta property="og:description" content="Terms and Conditions of Use Benemica">
+    <meta property="og:image" content="https://www.benemica.com/Content/demos/app-landing/images/logo-i-benemica.png">
+    <meta property="og:type" content="website" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Content/images/favicon/favicon.ico?v001" type="image/x-icon">
+    <link rel="icon" href="~/Content/images/favicon/favicon.ico?v001" type="image/x-icon">
+</head>
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="split-menu transparent-header sticky-header" data-sticky-class="not-dark" data-responsive-class="not-dark">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+
+                        <a href="../" class="standard-logo" data-dark-logo="../Content/demos/app-landing/images/benemica-official.png?v001"><img src="../Content/demos/app-landing/images/benemica-official.png?v001" alt="Canvas Logo"></a>
+                        <a href="../" class="retina-logo" data-dark-logo="../Content/demos/app-landing/images/logo-dark@2x-benemica.png?v001"><img src="../Content/demos/app-landing/images/logo@2x-benemica.png?v001" alt="Canvas Logo"></a>
+                    </div><!-- #logo end -->
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu" class="with-arrows clearfix not-dark">
+
+                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160"></ul>
+
+                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
+
+                            <li>
+                                <a href="https://benemica.com#section-why-benemica"><div>Why Benemica</div></a>
+                            </li>
+                            <li>
+                                <a href="https://benemica.com#section-features"><div>Feature</div></a>
+                            </li>
+                            <li>
+                                <a href="https://benemica.com#section-pricing"><div>Pricing</div></a>
+                            </li>
+                            <li>
+                                <a href="#" data-href="#section-faqs"><div>Partners</div></a>
+                                <ul>
+                                    <li>@Html.ActionLink("Why with us?", "whywithus", "partners")</li>
+                                    <li>@Html.ActionLink("Become a partner", "becomeapartner", "partners")</li>
+                                    <li>@Html.ActionLink("Our partners", "ourpartners", "partners")</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" data-href="#section-nextgen"><div>More Resource</div></a>
+                                <ul>
+                                    <li><a href="#" data-href="#section-nextgen"><div>Blog</div></a></li>
+                                    <li>@Html.ActionLink("FAQ", "faq", "moreresource")</li>
+                                    <li>@Html.ActionLink("Help", "help", "moreresource")</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </nav><!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+        <!--Contain-->
+
+        <section id="content">
+
+            <div class="content-wrapHeaderPage">
+                @using (Html.BeginForm("TermsOfUse", "TermsPrivacy", FormMethod.Post, new { id = "section-Partner-TOU" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="container clearfix">
+                        <div class="page-section nopadding nomargin">
+                            <h2 align="center">Terms and Conditions of Use</h2>
+                            <div class="clearfix">
+                                <div class="col-lg-8 offset-lg-2 col-md-6 bottommargin-sm" align="justify">
+                                    The use of the website(s) provided by PT. BPOSeven Inovasi Indonesia,
+                                    hereinafter “Benemica Website”, is subject to the following terms and
+                                    conditions, hereinafter “Terms and Conditions”:
+                                    <br /><br />
+                                    <ol start="1" type="1">
+                                        <li>
+                                            <strong>
+                                                Your acknowledgement of the terms and conditions of use
+                                            </strong>
+                                        </li>
+                                    </ol>
+                                    By accessing the Benemica Website you, the user, acknowledge and confirm
+                                    that you have read, understood, and agree to the following terms and
+                                    conditions of use. Furthermore, you agree to be bound by all applicable
+                                    laws as well as any other applicable rules and conditions.
+                                    <strong>
+                                        If you do not understand or agree with these terms and conditions you
+                                        must stop accessing and using the Benemica Website.
+                                    </strong>
+
+                                    <br /><br /><br />
+                                    <ol start="2" type="1">
+                                        <li>
+                                            <strong>
+                                                Scope of right to use
+                                            </strong>
+                                        </li>
+                                    </ol>
+                                    <p>
+                                        2.1 All text footage, pictures, graphics, software, applications, sound
+                                        samples, animations videos, corporate logos and brands, the layout of the
+                                        Benemica Website, as well as other content contained in the Benemica
+                                        Website, hereinafter jointly referred to as “Benemica Website Content”, are
+                                        protected by trademark and copyright law and other laws for the protection
+                                        of intellectual property and may be subject to third parties’ rights.
+                                    </p>
+                                    <p>
+                                        2.2 PT. BPOSeven Indonesia does not grant any license rights or other
+                                        rights regarding the use of the intellectual property rights in the
+                                        Benemica Website Content, unless otherwise specified herein. The copying,
+                                        distributing, reproducing, forwarding, otherwise using of these
+                                        intellectual property rights in the Benemica Website or the Benemica
+                                        Website Content including the making available to third parties is not
+                                        permitted without the prior written consent of PT. BPOSeven Inovasi
+                                        Indonesia.
+                                    </p>
+                                    <p>
+                                        2.3 The user is only permitted to view and use the Benemica Website Content
+                                        for his own personal, non-commercial use as part of his use of the Benemica
+                                        Website. The user is also permitted to produce a single copy of the
+                                        Benemica Website for his personal, non-commercial use, on the condition
+                                        that the content is not altered in the course of copying and all references
+                                        to intellectual property rights are retained in the copy, or inserted if
+                                        only extracts from the Benemica Website are used.
+                                    </p>
+                                    <p>
+                                        2.4 The content of press releases and other documents classified as public
+                                        may be used in public communications save the condition that the permission
+                                        granted hereunder does not apply to those parts of public documents which
+                                        are protected by trademark or copyright law, or other legal regulations.
+                                        Any use of such material is made in the sole responsibility of the user.
+                                    </p>
+                                    <p>
+                                        2.5 Any other use of the Benemica Website as well as the Benemica Website
+                                        Content is prohibited unless specifically permitted by these Terms and
+                                        Conditions.
+                                    </p>
+
+                                    <ol start="3" type="1">
+                                        <li>
+                                            <strong>
+                                                Restrictions of Use
+                                            </strong>
+                                        </li>
+                                    </ol>
+
+                                    3.1 The user must in particular not, without the prior written consent of
+                                    PT. BPOSeven Inovasi Indonesia,
+                                    <br />
+                                    <br />
+                                    <div style="padding-left:20px">
+                                        - use the Benemica Website or the Benemica Website Content for any
+                                        fraudulent or unlawful purpose;
+                                        <br />
+                                        <br />
+                                        - use any registered or unregistered trademarks or signs on the Benemica
+                                        Website or in the Benemica Website Content without the prior written
+                                        consent of the respective owner;
+                                        <br />
+                                        <br />
+                                        - translate, modify, adapt, reverse engineer, decompile or disassemble the
+                                        Benemica Website or Benemica Website Content in whole or in part;
+                                        <br />
+                                        <br />
+                                        - remove any notice of copyright, trademark, or other proprietary rights
+                                        from the Benemica Website Content;
+                                        <br />
+                                        <br />
+                                        - frame or otherwise embed Benemica Website Content in your or a third
+                                        party website;
+                                        <br />
+                                        <br />
+                                        - mirror any part of the Benemica Website;
+                                        <br />
+                                        <br />
+                                        - create a database by systematically storing and downloading all or any
+                                        Benemica Website Content; or
+                                        <br />
+                                        <br />
+                                        - use any robot, spider, site search application or retrieval application
+                                        or other manual or automatic device to retrieve, index, "scrape," "data
+                                        mine" or in any way reproduce or circumvent the navigational structure or
+                                        presentation of the Benemica Website or the Benemica Website Content.
+                                    </div>
+                                    <br />
+                                    3.2 PT. BPOSeven Inovasi Indonesia reserves the right to deny access to the
+                                    Benemica Website at any time.
+                                    <br /><br /><br />
+                                    <ol start="4" type="1">
+                                        <li>
+                                            <strong>Privacy</strong>
+                                        </li>
+                                    </ol>
+                                    All personal data is collected, stored, processed and used in accordance
+                                    with applicable data protection laws, the Benemica Privacy Policy and the
+                                    Benemica Cookie Policy. To find out more about the Benemica Privacy Policy
+                                    please click <u>here</u>.
+                                    <br /> <br />
+                                    <ol start="5" type="1">
+                                        <li>
+                                            <strong>
+                                                No Warranties
+                                            </strong>
+                                        </li>
+                                    </ol>
+                                    5.1 PT. BPOSeven Inovasi Indonesia does not give any express or implied
+                                    warranties, nor does it make any representations, nor does it assume any
+                                    responsibility that.
+                                    <br />
+                                    <br />
+                                    <div style="padding-left:20px">
+                                        - the Benemica Website or the Benemica Website Content are available
+                                        without interruption;
+                                        <br />
+                                        <br />
+                                        - the use of the Benemica Website or the Benemica Website Content will not
+                                        infringe any third party rights;
+                                        <br />
+                                        - the Benemica Website as well as the Benemica Website Content are free
+                                        from errors or are complete, accurate or up-to-date at all times;
+                                        <br />
+                                        <br />
+                                        - other web pages accessed by hyperlinks from the Benemica Website,
+                                        irrespective of whether these belong to affiliated companies of PT.
+                                        BPOSeven Inovasi Indonesia or third parties, do not infringe third party
+                                        rights, or are free from errors, or that applicable data protection
+                                        provisions are complied with; or that
+                                        <br />
+                                        <br />
+                                        - the Benemica Website is free from viruses, bugs, malware, or similar
+                                        malicious programs.
+                                    </div>
+                                    <br />
+                                    5.2 Any forward-looking statements made on the Benemica Website are based
+                                    on the beliefs and judgement of the management of PT. BPOSeven Inovasi
+                                    Indonesia at the time of their publication and are therefore subject to
+                                    risks and uncertainties. No assurance is given that these forward-looking
+                                    statements will prove to be accurate and complete. PT. BPOSeven Inovasi
+                                    Indonesia is under no obligation towards the user to update such
+                                    forward-looking statements and accepts no liability whatsoever for these
+                                    statements.
+                                    <br /><br /><br />
+                                    <ol start="6" type="1">
+                                        <li>
+                                            <strong>
+                                                Limitation of Liability
+                                            </strong>
+                                        </li>
+                                    </ol>
+                                    6.1 PT. BPOSeven Inovasi Indonesia does not accept any liability for:
+                                    <br />
+                                    <br />
+                                    <div style="padding-left:20px">
+                                        - defects in rights regarding the Benemica Website or Benemica Website
+                                        Content;
+                                        <br />
+                                        <br />
+                                        - any loss or damage arising as a result of inhibited access or
+                                        non-accessibility of the Benemica Website as well as Benemica Website
+                                        Content;
+                                        <br />
+                                        <br />
+                                        - any loss or damage, which may arise from the use of the Benemica Website
+                                        or of any of the Benemica Website Content; or
+                                        <br />
+                                        <br />
+                                        - the availability of the content of third party websites or any loss or
+                                        damage resulting from their use, regardless of the purpose of use,
+                                    </div>
+                                    <br />
+                                    whereas PT. BPOSeven Inovasi Indonesia does not limit its liability under
+                                    statutory law for the violation of life, body or health caused by willful
+                                    intent or gross negligence of PT. BPOSeven Inovasi Indonesia or its
+                                    representatives.
+                                    <br />
+                                    <br />
+                                    6.2 The Benemica Website and the Benemica Website Content are operated and
+                                    managed by PT. BPOSeven Inovasi Indonesia. Save the provisions herein, the
+                                    Benemica Website and the Benemica Website Content take into account the
+                                    requirements of the country, in which the BPOSeven company in charge is
+                                    based. PT. BPOSeven Inovasi Indonesia accepts no responsibility if (i) the
+                                    Benemica Website is accessed, or (ii) if the Benemica Website Content is
+                                    used or downloaded from the Benemica Website, in places outside the country
+                                    concerned. When the user accesses the Benemica Website from places outside
+                                    the country concerned, the user is solely responsible for complying with
+                                    the regulations that apply in accordance with their respective national
+                                    laws.
+                                    <br /><br /><br />
+                                    <ol start="7" type="1">
+                                        <li>
+                                            <strong>
+                                                Amendments to the Benemica Website or the Benemica Website Content
+                                                or Terms and Conditions
+                                            </strong>
+                                        </li>
+                                    </ol>
+                                    7.1 PT. BPOSeven Inovasi Indonesia reserves the right, at any time and
+                                    without prior notice, to make amendments, or additions, to the Benemica
+                                    Website or the Benemica Website Content.
+                                    <br />
+                                    <br />
+                                    7.2 PT. BPOSeven Inovasi Indonesia reserves the right to change these terms
+                                    and conditions of use from time to time at its sole discretion without any
+                                    obligation to inform the user.
+                                    <strong>
+                                        The user agrees that his continued use of the Benemica Website
+                                        constitutes his consent to respective changes of the terms and
+                                        conditions as applicable.
+                                    </strong>
+                                    <br /><br /><br />
+                                    <ol start="8" type="1">
+                                        <li>
+                                            <strong>Violation of these Terms and Conditions</strong>
+                                        </li>
+                                    </ol>
+                                    8.1 PT. BPOSeven Inovasi Indonesia reserves the right to deny the user’s
+                                    access to the Benemica Website in whole or in part at any time in case of
+                                    the user’s non-compliance with these Terms and Conditions or the user’s
+                                    infringement of the rights of PT. BPOSeven Inovasi Indonesia in the
+                                    Benemica Website or the Benemica Website Content or any third parties’
+                                    rights.
+                                    <br />
+                                    <br />
+                                    8.2 Furthermore, the user herewith indemnifies and holds harmless PT.
+                                    BPOSeven Inovasi Indonesia from and against all claims and damages arising
+                                    out of or in connection with (i) the use of, or activities in connection
+                                    with, the Benemica Website and Benemica Website Content, or (ii) any
+                                    violation of these Terms and Conditions by the user.
+                                    <br /><br /><br />
+                                    <ol start="9" type="1">
+                                        <li>
+                                            <strong>Applicable Law</strong>
+                                        </li>
+                                    </ol>
+                                    These Terms and Conditions and all questions and disputes relating to the
+                                    use of the Benemica Website or the Benemica Website Content are exclusively
+                                    subject to the laws of the Republic of Indonesia excluding the provisions
+                                    of international private law and the United Nations Convention on Contracts
+                                    for the International Sales of Goods (CISG).
+                                    <br /><br /><br />
+                                    <ol start="10" type="1">
+                                        <li>
+                                            <strong>Alternative Dispute Resolution for Consumer Disputes</strong>
+                                        </li>
+                                    </ol>
+                                    Benemica does not commit to participate in alternative dispute resolution
+                                    procedures in front of an alternative dispute resolution entity to resolve
+                                    disputes with consumers.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+        <!--End Contain-->
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" style="background-color: #FFF;">
+
+            <div class="container">
+
+                <!-- Footer Widgets
+                ============================================= -->
+                <div class="footer-widgets-wrap clearfix">
+                    <div class="row clearfix">
+
+                        <div class="col-lg-5">
+
+                            <div class="widget clearfix">
+                                <div class="row clearfix">
+                                    <div class="col-lg-8 bottommargin-sm clearfix" style="color:#888;">
+                                        <img src="~/Content/demos/app-landing/images/benemica-footer-logo.png?v001" alt="Canvas Logo" style="display: block;" class="bottommargin-sm">
+                                        <p>Benemica delivers innovative cloud-based human management solution, designed through comprehensive research of 100+ organizations across different industries.</p>
+                                        <a href="https://id.linkedin.com/in/benemica?trk=author_mini-profile_title" class="social-icon si-small si-borderless si-colored si-rounded si-linkedin">
+                                            <i class="icon-linkedin"></i>
+                                            <i class="icon-linkedin"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/benemica/?hl=en" class="social-icon si-small si-borderless si-colored si-rounded si-instagram">
+                                            <i class="icon-instagram"></i>
+                                            <i class="icon-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="row clearfix">
+
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>In News</h4>
+
+                                        <ul>
+                                            <li>Articles</li>
+                                            <li>Events</li>
+                                            <li>News</li>
+                                            <li><a href="">Visit our Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>About Us</h4>
+
+                                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
+                                            <li><a href="https://benemica.com#section-why-benemica">Why Benemica</a></li>
+                                            <li><a href="https://benemica.com#section-features">Feature</a></li>
+                                            <li><a href="https://benemica.com#section-pricing">Pricing</a></li>
+                                            <li>@Html.ActionLink("Our partners", "ourpartners", "partners")</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>Support</h4>
+
+                                        <ul>
+                                            <li><a href="mailto:sales@benemica.com?cc=support@bposeven.com&subject=Support Benemica - Nama Perusahaan">Email</a></li>
+                                            <li><a href="https://api.whatsapp.com/send?phone=6285891297805&text=HelloBenemica" class="classLinkWhatsapp" target="_blank">WhatsApp</a></li>
+                                            <li>Call Customer Care: <a href="tel:+622157903384" target="_blank">+62 21 579 033 84</a> ext. 115</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights" class="nobg notoppadding">
+
+                <div class="container clearfix">
+
+                    <div class="col_half">
+                        Copyrights &copy; 2020 BENEMICA<br>
+                        <div> @Html.ActionLink("Terms of Use", "termsofuse", "termsprivacy") / @Html.ActionLink("Privacy Policy", "privacypolicy", "termsprivacy")</div>
+                    </div>
+
+                </div>
+
+            </div><!-- #copyrights end -->
+
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="~/Scripts/js/jquery.js"></script>
+    <script src="~/Scripts/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="~/Scripts/js/functions.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+
+            function pricingSwitcher(elementCheck, elementParent, elementPricing) {
+                elementParent.find('.pts-left,.pts-right').removeClass('pts-switch-active');
+                elementPricing.find('.pts-switch-content-left,.pts-switch-content-right').addClass('hidden');
+
+                if (elementCheck.filter(':checked').length > 0) {
+                    elementParent.find('.pts-right').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-right').removeClass('hidden');
+                } else {
+                    elementParent.find('.pts-left').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-left').removeClass('hidden');
+                }
+            }
+
+            $('.pts-switcher').each(function () {
+                var element = $(this),
+                    elementCheck = element.find(':checkbox'),
+                    elementParent = $(this).parents('.pricing-tenure-switcher'),
+                    elementPricing = $(elementParent.attr('data-container'));
+
+                pricingSwitcher(elementCheck, elementParent, elementPricing);
+
+                elementCheck.on('change', function () {
+                    pricingSwitcher(elementCheck, elementParent, elementPricing);
+                });
+            });
+
+            // Get Started From Validation
+            var getStartedForm = $('#get-started-form'),
+                getStartedFormAlert = getStartedForm.attr('data-alert-type'),
+                getStartedFormLoader = getStartedForm.attr('data-loader'),
+                getStartedFormResult = getStartedForm.find('.contact-form-result'),
+                getStartedFormRedirect = getStartedForm.attr('data-redirect');
+
+            getStartedForm.validate({
+                submitHandler: function (form) {
+
+                    getStartedFormResult.hide();
+
+                    if (getStartedFormLoader == 'button') {
+                        var defButton = $(form).find('button'),
+                            defButtonText = defButton.html();
+
+                        defButton.html('<i class="icon-line-loader icon-spin nomargin"></i>');
+                    } else {
+                        $(form).find('.form-process').fadeIn();
+                    }
+
+                    $(form).ajaxSubmit({
+                        target: getStartedFormResult,
+                        dataType: 'json',
+                        resetForm: true,
+                        success: function (data) {
+                            if (getStartedFormLoader == 'button') {
+                                defButton.html(defButtonText);
+                            } else {
+                                $(form).find('.form-process').fadeOut();
+                            }
+                            if (data.alert != 'error' && getStartedFormRedirect) {
+                                window.location.replace(getStartedFormRedirect);
+                                return true;
+                            }
+                            if (getStartedFormAlert == 'inline') {
+                                if (data.alert == 'error') {
+                                    var alertType = 'alert-danger';
+                                } else {
+                                    var alertType = 'alert-success';
+                                }
+
+                                getStartedFormResult.addClass('alert ' + alertType).html(data.message).slideDown(400);
+                            } else {
+                                getStartedFormResult.attr('data-notify-type', data.alert).attr('data-notify-msg', data.message).html('');
+                                SEMICOLON.widget.notifications(getStartedFormResult);
+                            }
+                        }
+                    });
+                }
+            });
+
+            $('[data-pricing-plan]').click(function () {
+                getStartedForm.find('#get-started-form-package').val($(this).attr('data-pricing-plan'));
+                getStartedForm.find('#modal-get-started-package').html($(this).attr('data-pricing-plan'));
+            });
+
+            // Opera 8.0+
+            var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+            // Firefox 1.0+
+            var isFirefox = typeof InstallTrigger !== 'undefined';
+            // Safari 3.0+ "[object HTMLElementConstructor]"
+            var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+            // Internet Explorer 6-11
+            var isIE = false || !!document.documentMode;
+            // Edge 20+
+            var isEdge = !isIE && !!window.StyleMedia;
+            // Chrome 1 - 71
+            var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+            // Blink engine detection
+            var isBlink = (isChrome || isOpera) && !!window.CSS;
+            // parameter screen width and height
+            if (isFirefox == true) {
+                $(".classLinkWhatsapp").attr("href", "https://web.whatsapp.com/send?phone=6285891297805&text=HelloBenemica")
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="50e48c79997943e9b60c76a8738d2f22" Name="Diagram1" ZoomLevel="48">
+        <EntityTypeShape EntityType="ModelData.tbl_Appointment_Contract_Information" Width="1.5" PointX="7.5" PointY="182.5" />
+        <EntityTypeShape EntityType="ModelData.tbl_Appointment_Department" Width="1.5" PointX="7.5" PointY="179.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Appointment_Division" Width="1.5" PointX="7.5" PointY="193.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Appointment_Grade" Width="1.5" PointX="7.5" PointY="191.125" />
+        <EntityTypeShape EntityType="ModelData.tbl_Appointment_Position" Width="1.5" PointX="7.5" PointY="188.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_Appointment_Status_Information" Width="1.5" PointX="7.5" PointY="196.5" />
+        <EntityTypeShape EntityType="ModelData.tbl_Appointment_Work_Location" Width="1.5" PointX="7.5" PointY="199.5" />
+        <EntityTypeShape EntityType="ModelData.tbl_Appointment_Working_Time" Width="1.5" PointX="7.5" PointY="185.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_Client_Organization_Service_Role" Width="1.5" PointX="6" PointY="97.25" />
+        <EntityTypeShape EntityType="ModelData.tbl_Currency" Width="1.5" PointX="11.75" PointY="5.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Current_Version" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Family" Width="1.5" PointX="5.25" PointY="165.625" />
+        <EntityTypeShape EntityType="ModelData.tbl_Error_Code" Width="1.5" PointX="9.75" PointY="13.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Error_Log" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Function" Width="1.5" PointX="1.5" PointY="163.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_General_Number" Width="1.5" PointX="14.75" PointY="8.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_HeadOffice_Branch_Location" Width="1.5" PointX="5.25" PointY="44.625" />
+        <EntityTypeShape EntityType="ModelData.tbl_Holiday_Calendar" Width="1.5" PointX="14.75" PointY="12.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Job_Code" Width="1.5" PointX="3" PointY="131.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_Job_Function" Width="1.5" PointX="3" PointY="113.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Job_Title" Width="1.5" PointX="3" PointY="122.25" />
+        <EntityTypeShape EntityType="ModelData.tbl_Language" Width="1.5" PointX="0.75" PointY="16.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Log_System" Width="1.5" PointX="16.75" PointY="14.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Map_Location" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Menu_Function" Width="1.5" PointX="0.75" PointY="159.125" />
+        <EntityTypeShape EntityType="ModelData.tbl_Menu_Function_Restriction" Width="1.5" PointX="8" PointY="159.5" />
+        <EntityTypeShape EntityType="ModelData.tbl_Menu_Restriction" Width="1.5" PointX="5.75" PointY="144.5" />
+        <EntityTypeShape EntityType="ModelData.tbl_Nationality" Width="1.5" PointX="13.75" PointY="17.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Account_Group_Maintenence" Width="1.5" PointX="3" PointY="109.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Service_Role" Width="1.5" PointX="6" PointY="92.25" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Team" Width="1.5" PointX="3" PointY="148" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_User" Width="1.5" PointX="3" PointY="95.125" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Schedule" Width="1.5" PointX="15.75" PointY="18.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Role_Menu" Width="1.5" PointX="5.25" PointY="126.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Salary_Grade" Width="1.5" PointX="3" PointY="31.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Service_Role" Width="1.5" PointX="3.75" PointY="85.125" />
+        <EntityTypeShape EntityType="ModelData.tbl_Session_Login" Width="1.5" PointX="2.75" PointY="19.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_SysParam" Width="1.5" PointX="4.75" PointY="19.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Tax_Status_Effective_Year" Width="1.5" PointX="7.5" PointY="156.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_User_Role" Width="1.5" PointX="8.25" PointY="126.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Work_Location" Width="1.5" PointX="20.75" PointY="10.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Workflow_Status" Width="1.5" PointX="11.75" PointY="20.75" />
+        <EntityTypeShape EntityType="ModelData.vw_appointment_information" Width="1.5" PointX="20.75" PointY="13.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Appointment_Actual" Width="1.5" PointX="22.75" PointY="5.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Menu_Function" Width="1.5" PointX="0.75" PointY="22.75" />
+        <EntityTypeShape EntityType="ModelData.vw_New_BPJS_Manpower" Width="1.5" PointX="22.75" PointY="12.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Organization_Menu" Width="1.5" PointX="17.75" PointY="22.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Organization_Menu_Function" Width="1.5" PointX="19.75" PointY="22.75" />
+        <EntityTypeShape EntityType="ModelData.vw_role" Width="1.5" PointX="2.75" PointY="23.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Role_Menu_Function" Width="1.5" PointX="24.75" PointY="6.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Role_Organization_Menu_Function" Width="1.5" PointX="9.625" PointY="24.625" />
+        <EntityTypeShape EntityType="ModelData.vw_Team" Width="1.5" PointX="24.75" PointY="11.75" />
+        <EntityTypeShape EntityType="ModelData.vw_user" Width="1.5" PointX="21.75" PointY="24.75" />
+        <EntityTypeShape EntityType="ModelData.vw_User_Menu" Width="1.5" PointX="24.75" PointY="23.75" />
+        <EntityTypeShape EntityType="ModelData.vw_user_organization" Width="1.5" PointX="13.75" PointY="25.75" />
+        <EntityTypeShape EntityType="ModelData.vw_User_Role" Width="1.5" PointX="26.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.vw_User_Role_Menu" Width="1.5" PointX="26.75" PointY="6.75" />
+        <EntityTypeShape EntityType="ModelData.vw_User_Role_Menu_Function" Width="1.5" PointX="26.75" PointY="10.75" />
+        <AssociationConnector Association="ModelData.fk_tbl_Client_Org_Svc_Role_tbl_Organization_Service_Role_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Menu_Function_tbl_Function_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Menu_Function_Restriction_tbl_Menu_Function_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Menu_Function_Restriction_tbl_Menu_Restriction_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Organization_Service_Role_tbl_Service_Role_1" />
+        <EntityTypeShape EntityType="ModelData.tbl_Hist_Role_Menu" Width="1.5" PointX="27.375" PointY="15.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Tax" Width="1.5" PointX="5.25" PointY="194.75" />
+        <AssociationConnector Association="ModelData.FK_tbl_Tax_Status_Effective_Year_tbl_Tax" />
+        <EntityTypeShape EntityType="ModelData.tbl_Additional_Payroll_Detail" Width="1.5" PointX="12.5" PointY="176.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Calculation_Component" Width="1.5" PointX="9" PointY="92.875" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Calculation_Employee" Width="1.5" PointX="7.5" PointY="172.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_ID_Information" Width="1.5" PointX="5.25" PointY="159.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Upload_Mapping" Width="1.5" PointX="29.375" PointY="18.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Calculation" Width="3.375" PointX="5.25" PointY="181.625" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Calculation_Component_tbl_Payroll_Calculation" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Calculation_Employee_tbl_Payroll_Calculation" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Calculation_Component_Ex" Width="1.5" PointX="12" PointY="96.25" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Calculation_Employee_Ex" Width="1.5" PointX="7.5" PointY="131.25" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Calculation_Component_Ex_tbl_Payroll_Calculation" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Calculation_Employee_Ex_tbl_Payroll_Calculation" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Appointment_Work_Location" Width="1.5" PointX="29.375" PointY="13.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Cost_Parameter" Width="1.5" PointX="2.625" PointY="26.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Appointment" Width="1.5" PointX="4.5" PointY="191.625" />
+        <EntityTypeShape EntityType="ModelData.tbl_General_Parameter" Width="1.5" PointX="24.625" PointY="28.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Hist_Organization_Menu" Width="1.5" PointX="33.625" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Hist_Role" Width="1.5" PointX="33.625" PointY="5.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Non_Taxable_Income_Parameter" Width="1.5" PointX="33.625" PointY="10.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization" Width="1.5" PointX="0.75" PointY="98.125" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Menu" Width="1.5" PointX="5.25" PointY="158.625" />
+        <EntityTypeShape EntityType="ModelData.tbl_Role" Width="1.5" PointX="8.25" PointY="116.5" />
+        <EntityTypeShape EntityType="ModelData.tbl_Tax_Rate_Parameter" Width="1.5" PointX="33.625" PointY="15.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Organization_Payroll_Component_Summary" Width="1.5" PointX="9.625" PointY="8.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Role_Menu" Width="1.5" PointX="33.625" PointY="26.75" />
+        <AssociationConnector Association="ModelData.FK_tbl_Appointment_Contract_Information_tbl_Appointment_Contract_Information" />
+        <AssociationConnector Association="ModelData.FK_tbl_Appointment_Department_tbl_Employee_Appointment" />
+        <AssociationConnector Association="ModelData.FK_tbl_Appointment_Division_tbl_Employee_Appointment" />
+        <AssociationConnector Association="ModelData.FK_tbl_Appointment_Grade_tbl_Employee_Appointment" />
+        <AssociationConnector Association="ModelData.FK_tbl_Appointment_Position_tbl_Employee_Appointment" />
+        <AssociationConnector Association="ModelData.FK_tbl_Appointment_Status_Information_tbl_Employee_Appointment" />
+        <AssociationConnector Association="ModelData.FK_tbl_Appointment_Work_Location_tbl_Employee_Appointment" />
+        <AssociationConnector Association="ModelData.FK_tbl_Appointment_Working_Time_tbl_Employee_Appointment" />
+        <AssociationConnector Association="ModelData.fk_tbl_Client_Organization_Service_Role_tbl_Organization_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Job_Code_tbl_Organization_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Job_Function_tbl_Organization_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Job_Title_tbl_Organization_1" />
+        <AssociationConnector Association="ModelData.FK_tbl_Organization_Menu_tbl_Menu_Function" />
+        <AssociationConnector Association="ModelData.FK_tbl_Organization_Account_Group_Maintenence_tbl_Organization" />
+        <AssociationConnector Association="ModelData.fk_tbl_Organization_Service_Role_tbl_Organization_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Organization_Team_tbl_Organization_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Organization_User_tbl_Organization_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Role_tbl_Organization_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_Salary_Grade_tbl_Organization_1" />
+        <AssociationConnector Association="ModelData.tbl_Payroll_Schedule_tbl_Organization" />
+        <AssociationConnector Association="ModelData.fk_tbl_User_Group_Menu_tbl_Organization_Menu_1" />
+        <AssociationConnector Association="ModelData.FK_tbl_Role_Menu_tbl_Role" />
+        <AssociationConnector Association="ModelData.fk_tbl_User_Role_tbl_Role_1" />
+        <EntityTypeShape EntityType="ModelData.tbl_Compensation_Benefit" Width="1.5" PointX="9.625" PointY="50.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Variable_Detail" Width="1.5" PointX="12.5" PointY="133.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Transaction" Width="1.5" PointX="13.5" PointY="126.5" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Transaction_tbl_Payroll_Calculation" />
+        <EntityTypeShape EntityType="ModelData.tbl_Holiday_Calendar_Organization_Details" Width="1.5" PointX="19.25" PointY="58.25" />
+        <EntityTypeShape EntityType="ModelData.tbl_Tax_Period_Month" Width="1.5" PointX="5.25" PointY="61.5" />
+        <EntityTypeShape EntityType="ModelData.tbl_Chart_Account" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Client_Organization_Team" Width="1.5" PointX="5.25" PointY="122.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_Cost_Center" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Tax_Period" Width="1.5" PointX="3" PointY="134.875" />
+        <AssociationConnector Association="ModelData.FK_tbl_Client_Organization_Team_tbl_Organization" />
+        <AssociationConnector Association="ModelData.FK_tbl_Client_Organization_Team_tbl_Organization_Team" />
+        <AssociationConnector Association="ModelData.FK_tbl_Tax_Period_tbl_Organization" />
+        <AssociationConnector Association="ModelData.FK_tbl_Tax_Period_Month_tbl_Tax_Period" />
+        <EntityTypeShape EntityType="ModelData.tbl_ID_Number" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_List_Of_Bank" Width="1.5" PointX="0.75" PointY="123.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Contact_Person" Width="1.5" PointX="3" PointY="166.875" />
+        <EntityTypeShape EntityType="ModelData.tbl_Holiday_Calendar_Organization" Width="1.5" PointX="17" PointY="58.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Branch_NPWP" Width="1.5" PointX="3" PointY="140.625" />
+        <AssociationConnector Association="ModelData.FK_tbl_Contact_Person_tbl_Organization" />
+        <AssociationConnector Association="ModelData.FK_tbl_Holiday_Calendar_Organization_tbl_Holiday_Calendar" />
+        <AssociationConnector Association="ModelData.FK_tbl_Holiday_Calendar_Organization_Details_tbl_Organization" />
+        <AssociationConnector Association="ModelData.FK_tbl_Holiday_Calendar_Organization_tbl_Organization" />
+        <AssociationConnector Association="ModelData.fk_tbl_Organization_Branch_NPWP_tbl_Organization_1" />
+        <EntityTypeShape EntityType="ModelData.tbl_BPJS_Healthcare" Width="1.5" PointX="3" PointY="198.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_BPJS_Manpower" Width="1.5" PointX="3" PointY="98.25" />
+        <AssociationConnector Association="ModelData.FK_tbl_BPJS_Healthcare_tbl_Organization" />
+        <AssociationConnector Association="ModelData.FK_tbl_BPJS_Manpower_tbl_Organization" />
+        <EntityTypeShape EntityType="ModelData.tbl_Audit_Trail" Width="1.5" PointX="29.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Payment" Width="1.5" PointX="5.25" PointY="113.75" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_Payment_tbl_List_Of_Bank" />
+        <EntityTypeShape EntityType="ModelData.tbl_Message" Width="1.5" PointX="5.375" PointY="8.75" />
+        <EntityTypeShape EntityType="ModelData.vw_AuditTrails" Width="1.5" PointX="16.375" PointY="3.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Compensation_Benefit" Width="1.5" PointX="16.375" PointY="31.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Payroll_Component" Width="1.5" PointX="7.375" PointY="39.25" />
+        <AssociationConnector Association="ModelData.FK_tbl_Compensation_Benefit_tbl_Employee_Payroll_Component" />
+        <EntityTypeShape EntityType="ModelData.tbl_Config_Table_Header" Width="1.5" PointX="23.375" PointY="20.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Payroll_Component" Width="1.5" PointX="7.375" PointY="29.125" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Calculation_Component_tbl_Organization_Payroll_Component" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Calculation_Ex_Component_tbl_Organization_Payroll_Component" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Payroll_Component_Effective" Width="1.5" PointX="9.625" PointY="40.25" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Component_Formula" Width="1.5" PointX="29.375" PointY="5.75" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_Payroll_Component_Effective_tbl_Employee_Payroll_Component" />
+        <EntityTypeShape EntityType="ModelData.tbl_User_Organization_Team" Width="1.5" PointX="13.875" PointY="89.5" />
+        <AssociationConnector Association="ModelData.fk_tbl_User_Organization_Team_tbl_Organization_Team_1" />
+        <EntityTypeShape EntityType="ModelData.tbl_Exchange_Rate_Details" Width="1.5" PointX="5.25" PointY="173.125" />
+        <EntityTypeShape EntityType="ModelData.tbl_Exchange_Rate" Width="1.5" PointX="3" PointY="172.5" />
+        <AssociationConnector Association="ModelData.FK_tbl_Exchange_Rate_Details_tbl_Exchange_Rate" />
+        <EntityTypeShape EntityType="ModelData.tbl_Upload_Mapping" Width="1.5" PointX="23.375" PointY="0.75" />
+        <AssociationConnector Association="ModelData.FK_tbl_Exchange_Rate_tbl_Organization" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Tax_Correction" Width="1.5" PointX="9.375" PointY="169.5" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Tax_Correction_tbl_Payroll_Calculation" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Period" Width="1.5" PointX="8.25" PointY="121.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Period_Detail" Width="1.5" PointX="10.5" PointY="121.5" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Period_tbl_Organization" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Calculation_tbl_Payroll_Period" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Period_Detail_tbl_Payroll_Period" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Period_tbl_Tax_Period" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Address" Width="1.5" PointX="20.375" PointY="28.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Additional" Width="1.5" PointX="7.375" PointY="16.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payslip" Width="1.5" PointX="29.375" PointY="31.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Upload_Staging_Header" Width="1.5" PointX="5.375" PointY="23.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Login_Epayslip" Width="1.5" PointX="16.375" PointY="26.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Closing" Width="1.5" PointX="9.375" PointY="164.625" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Closing_tbl_Payroll_Calculation" />
+        <EntityTypeShape EntityType="ModelData.tbl_Additional_Payroll" Width="1.5" PointX="14.75" PointY="96.5" />
+        <AssociationConnector Association="ModelData.FK_tbl_Additional_payroll_tbl_Additional_Payroll_Detail" />
+        <AssociationConnector Association="ModelData.FK_tbl_Additional_Payroll_tbl_Payroll_Period_Detail" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Variable" Width="1.5" PointX="17.75" PointY="94.375" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Variable" Width="1.5" PointX="9.375" PointY="16.75" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Variable_tbl_Payroll_Period_Detail" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Variable_Detail_tbl_Payroll_Variable" />
+        <EntityTypeShape EntityType="ModelData.tbl_HeadOffice_Branch" Width="1.5" PointX="3" PointY="40.25" />
+        <AssociationConnector Association="ModelData.FK_tbl_HeadOffice_Branch_Location_tbl_HeadOffice_Branch" />
+        <AssociationConnector Association="ModelData.FK_tbl_HeadOffice_Branch_tbl_Organization" />
+        <EntityTypeShape EntityType="ModelData.vw_Generate_Bank_File" Width="1.5" PointX="11.375" PointY="34.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Tax_Period_Summary" Width="1.5" PointX="36.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Period" Width="1.5" PointX="36.375" PointY="4.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Generate_Bank_File_Template_Detail" Width="1.5" PointX="34" PointY="32" />
+        <EntityTypeShape EntityType="ModelData.tbl_Generate_Bank_File_Template_Header" Width="1.5" PointX="31.75" PointY="32.25" />
+        <EntityTypeShape EntityType="ModelData.vw_Generate_Bank_File_Template" Width="1.5" PointX="2.75" PointY="35.75" />
+        <AssociationConnector Association="ModelData.Generate_Bank_Template_ID" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Period_Summary" Width="1.5" PointX="17.375" PointY="10.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Generate_Bank_File_Details_Summary" Width="1.5" PointX="3.375" PointY="16.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Generate_Bank_File_Result" Width="1.5" PointX="29.375" PointY="10.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Slip_Component" Width="1.5" PointX="15" PointY="75.375" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Slip_Employee" Width="1.5" PointX="20" PointY="96.125" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Tax_Summary" Width="1.5" PointX="36.375" PointY="10.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Tax_Object_Code" Width="1.5" PointX="36.375" PointY="14.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Tax_Calculation_Approved" Width="1.5" PointX="38.375" PointY="5.75" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Organ__2A962F78" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Organ__2C496DC0" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Organ__33EA8F88" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Organ__37BB206C" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Organ__3B8BB150" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Organ__5D8BC399" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Organ__69BC9054" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Organ__6B6FCE9C" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Payroll_Calculation_Details" Width="1.5" PointX="21.375" PointY="38.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Organization_Email_Setup_Summary" Width="1.5" PointX="40.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Report_Employee_JKK" Width="1.5" PointX="40.375" PointY="4.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Notification_Log" Width="1.5" PointX="40.375" PointY="8.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Working_Time" Width="1.5" PointX="3" PointY="117.875" />
+        <AssociationConnector Association="ModelData.FK_tbl_Organization_Working_Time_tbl_Organization" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Layout" Width="1.5" PointX="38.375" PointY="23.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Payslip_Summary" Width="1.5" PointX="40.375" PointY="13.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Calculation_Transaction" Width="1.5" PointX="40.375" PointY="17.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Report_Employee_Information" Width="1.5" PointX="38.375" PointY="34.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Slip_List_Bank" Width="1.5" PointX="40.375" PointY="29.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Payroll_Calculation" Width="1.5" PointX="23.375" PointY="38.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Report_Employee_Payroll_History" Width="1.5" PointX="33.375" PointY="40.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Report_Summary_History" Width="1.5" PointX="40.375" PointY="35.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Template" Width="1.5" PointX="35.375" PointY="40.75" />
+        <EntityTypeShape EntityType="ModelData.vw_TaxPeriodMonth" Width="1.5" PointX="18.375" PointY="6.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Appointment_WorkingTime" Width="2" PointX="27.375" PointY="22.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Appointment_Status" Width="1.5" PointX="29.375" PointY="26.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Bank_Employee" Width="1.5" PointX="7.375" PointY="20.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Download_Organization_Payroll_Component" Width="1.5" PointX="27.375" PointY="37.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Run_Closing" Width="1.5" PointX="30.375" PointY="22.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Additional_Payroll" Width="1.5" PointX="24.375" PointY="33.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Calculation_Period" Width="1.5" PointX="26.375" PointY="33.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Report_Employee_Tax_Component" Width="1.5" PointX="29.375" PointY="41.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Generate_Bank_File" Width="1.5" PointX="42.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Email_Setup" Width="1.5" PointX="42.375" PointY="6.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Calculation_Summary" Width="1.5" PointX="42.375" PointY="12.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Calculation_Tax_All" Width="1.5" PointX="42.375" PointY="17.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Branch_List_Of_Bank" Width="1.5" PointX="3" PointY="126.75" />
+        <AssociationConnector Association="ModelData.FK_tbl_Branch_List_Of_Bank_tbl_List_Of_Bank" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_Payment_tbl_List_Of_Bank1" />
+        <EntityTypeShape EntityType="ModelData.tbl_History_User" Width="1.5" PointX="29.375" PointY="37.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Payroll_Component" Width="1.5" PointX="40.375" PointY="42.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Menu" Width="1.5" PointX="0.75" PointY="154.875" />
+        <AssociationConnector Association="ModelData.FK_tbl_Menu_Function_tbl_Menu" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Aditional" Width="1.5" PointX="32.375" PointY="20.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Exchange_File" Width="1.5" PointX="42.375" PointY="42.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Slip_Description_Employee" Width="1.5" PointX="12.375" PointY="40.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Slip" Width="1.5" PointX="12.75" PointY="120.875" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Slip_tbl_Payroll_Period_Detail" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Payro__5E7FE7D2" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Payro__63449CEF" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Slip_Employee_Summary" Width="1.5" PointX="15.375" PointY="37.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Group" Width="1.5" PointX="11.25" PointY="126.125" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Group_Detail" Width="1.5" PointX="13.5" PointY="136.25" />
+        <AssociationConnector Association="ModelData.FK_tbl_organization_Group_tbl_Organization" />
+        <AssociationConnector Association="ModelData.FK_tbl_Organization_Group_Detail_tbl_organization_Group" />
+        <AssociationConnector Association="ModelData.FK_tbl_organization_Group_tbl_Organization_Team" />
+        <EntityTypeShape EntityType="ModelData.tbl_Leave_Types" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_User_Trial" Width="1.5" PointX="16.375" PointY="43.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payslip_Setting" Width="1.5" PointX="46.625" PointY="1" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Leave_Entitlement" Width="1.5" PointX="44.375" PointY="10" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Leave_Entitlement_Detail" Width="1.5" PointX="46.625" PointY="10.25" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_Leave_Entitlement_Detail_tbl_Employee_Leave_Entitlement" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Employee" Width="1.5" PointX="44.375" PointY="22.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Leave_Entitlement_Summary" Width="1.5" PointX="22.375" PointY="44.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payslip_Template" Width="1.5" PointX="44.375" PointY="48.125" />
+        <AssociationConnector Association="ModelData.Payslip_ID" />
+        <EntityTypeShape EntityType="ModelData.tbl_Chat_Account" Width="1.5" PointX="24.375" PointY="44.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Chat_Log" Width="1.5" PointX="26.375" PointY="44.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Loan" Width="1.5" PointX="18.375" PointY="41.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Loan" Width="1.5" PointX="44.375" PointY="38.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Download_Employee_Payroll_Component" Width="1.5" PointX="12.375" PointY="45.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Base_Location" Width="1.5" PointX="46.375" PointY="4.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Session_Mobile" Width="1.5" PointX="7.375" PointY="5.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Tax_Status" Width="1.5" PointX="28.375" PointY="46.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Base_Location" Width="1.5" PointX="46.375" PointY="24.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Calculation_Transaction_Approved" Width="1.5" PointX="30.375" PointY="46.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Work_Location" Width="1.5" PointX="25.375" PointY="19.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Signature" Width="1.5" PointX="3" PointY="92" />
+        <AssociationConnector Association="ModelData.FK_tbl_Organization_Signature_tbl_Organization" />
+        <EntityTypeShape EntityType="ModelData.tbl_Mobile_Captha" Width="1.5" PointX="36.375" PointY="19.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Calculation_Log" Width="1.5" PointX="20.375" PointY="41.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee" Width="1.5" PointX="3" PointY="74.5" />
+        <AssociationConnector Association="ModelData.FK_tbl_Additional_payroll_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK_tbl_Compensation_Benefit_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Emplo__1F04813B" />
+        <AssociationConnector Association="ModelData.FK__tbl_Payro__Emplo__625078B6" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_Appointment_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_Family_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_ID_Number_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_Payment_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_tbl_Organization" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Calculation_Employee_Ex_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Calculation_Employee_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payroll_Variable_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK_tbl_Tax_tbl_Employee" />
+        <EntityTypeShape EntityType="ModelData.tbl_User" Width="1.5" PointX="46.375" PointY="41.125" />
+        <AssociationConnector Association="ModelData.fk_tbl_Organization_User_tbl_User_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_User_Group_tbl_User_1" />
+        <AssociationConnector Association="ModelData.fk_tbl_User_Team_tbl_User_1" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Approval" Width="1.5" PointX="11.375" PointY="28.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Bukti_Potong_Permanent" Width="1.5" PointX="13.375" PointY="28.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Document" Width="1.5" PointX="6.25" PointY="85.75" />
+        <AssociationConnector Association="ModelData.Employee" />
+        <AssociationConnector Association="ModelData.Organization" />
+        <EntityTypeShape EntityType="ModelData.tbl_Menu_Icon_Mobile" Width="1.5" PointX="5.375" PointY="47.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Approval" Width="1.5" PointX="46.375" PointY="14.75" />
+        <EntityTypeShape EntityType="ModelData.vw_User_Mobile" Width="1.5" PointX="46.375" PointY="47.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Organization_Structure" Width="1.5" PointX="3" PointY="69.25" />
+        <AssociationConnector Association="ModelData.FK_tbl_Organization_Structure_tbl_Organization" />
+        <EntityTypeShape EntityType="ModelData.tbl_Generate_Bank_File_Details" Width="1.5" PointX="48.375" PointY="4.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Generate_Bank_File_Details" Width="1.5" PointX="48.375" PointY="14.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Third_Party" Width="1.5" PointX="13.375" PointY="33.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Third_Party_Content" Width="1.5" PointX="48.375" PointY="21.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Third_Party_Employee" Width="1.5" PointX="24.375" PointY="48.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Third_Party_Log" Width="1.5" PointX="48.375" PointY="25.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Base_Location_Detail" Width="1.5" PointX="50.625" PointY="29.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Base_Location_Header" Width="1.5" PointX="48.375" PointY="29" />
+        <EntityTypeShape EntityType="ModelData.vw_Base_Location_List" Width="1.5" PointX="32.375" PointY="48.75" />
+        <AssociationConnector Association="ModelData.FK__tbl_Base___Base___63A48FA2" />
+        <EntityTypeShape EntityType="ModelData.vw_Base_Location_All" Width="1.5" PointX="48.375" PointY="34.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Column" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Result" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Setting_Detail" Width="1.5" PointX="36" PointY="36.875" />
+        <EntityTypeShape EntityType="ModelData.tbl_Reminder" Width="1.5" PointX="48.375" PointY="41.875" />
+        <EntityTypeShape EntityType="ModelData.tbl_Reminder_Employee" Width="1.5" PointX="50.625" PointY="41" />
+        <EntityTypeShape EntityType="ModelData.tbl_Reminder_User" Width="1.5" PointX="50.625" PointY="43.625" />
+        <AssociationConnector Association="ModelData.FK_tbl_Reminder_Employee_tbl_Reminder" />
+        <AssociationConnector Association="ModelData.FK_tbl_Reminder_User_tbl_Reminder_User" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Overtime" Width="1.5" PointX="18.375" PointY="47.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Claim" Width="1.5" PointX="34.375" PointY="48.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Timeline_Mobile" Width="1.5" PointX="48.375" PointY="46.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Apply_Leave" Width="1.5" PointX="9.375" PointY="43.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Bank_Information" Width="1.5" PointX="3" PointY="62.625" />
+        <AssociationConnector Association="ModelData.FK_tbl_Bank_Information_tbl_Organization" />
+        <AssociationConnector Association="ModelData.FK_tbl_Employee_Payment_tbl_Bank_Information" />
+        <EntityTypeShape EntityType="ModelData.tbl_Leave_History" Width="1.5" PointX="32.375" PointY="23.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Leave_Employee" Width="1.5" PointX="34.375" PointY="22.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Report_Setting" Width="1.75" PointX="33.5" PointY="36" />
+        <EntityTypeShape EntityType="ModelData.vw_Report_Setting" Width="1.75" PointX="17.125" PointY="37.75" />
+        <AssociationConnector Association="ModelData.FK__tbl_Repor__Payro__75B852E5" />
+        <EntityTypeShape EntityType="ModelData.tbl_Trx_Bank_Transfer" Width="1.5" PointX="50.375" PointY="1.25" />
+        <EntityTypeShape EntityType="ModelData.tbl_Trx_Bank_Transfer_Detail" Width="1.5" PointX="52.625" PointY="1.125" />
+        <EntityTypeShape EntityType="ModelData.vw_Trx_Bank_Transfer" Width="1.5" PointX="40.375" PointY="49.75" />
+        <AssociationConnector Association="ModelData.FK_tbl_Trx_Bank_Transfer_Detail_tbl_Trx_Bank_Transfer" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payroll_Tax_Calculation_Np" Width="1.5" PointX="5.375" PointY="50.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Payment_Details" Width="1.5" PointX="14.375" PointY="49.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Payment_Summary" Width="1.5" PointX="20.375" PointY="49.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Order" Width="1.5" PointX="50.375" PointY="14.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Promotion" Width="1.5" PointX="50.375" PointY="22.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Tiering" Width="1.5" PointX="26.375" PointY="50.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_User_Order" Width="1.5" PointX="50.375" PointY="33.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Blog_Posts" Width="1.5" PointX="50.375" PointY="46.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Blog_Summary" Width="1.5" PointX="0.75" PointY="51.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Order_Promotion_Detail" Width="1.5" PointX="51.375" PointY="7.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Order_Tiering_Detail" Width="1.5" PointX="42.375" PointY="51.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Menu_Blog" Width="1.5" PointX="52.375" PointY="11.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Package_Pricing" Width="1.5" PointX="44.375" PointY="19.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Chat_Account" Width="1.5" PointX="35.375" PointY="44.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Chat_Log" Width="1.5" PointX="52.375" PointY="19.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Contact_Support" Width="1.5" PointX="52.375" PointY="15.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Payslip_Template_Detail" Width="1.5" PointX="46.625" PointY="53.125" />
+        <AssociationConnector Association="ModelData.FK_tbl_Payslip_Template_Detail_tbl_Payslip_Template" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Overtime_Tier" Width="1.5" PointX="52.375" PointY="23.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Apply_Leave_Detail" Width="1.5" PointX="52.375" PointY="33.75" />
+        <AssociationConnector Association="ModelData.FK__tbl_Apply__Leave__11F56A37" />
+        <EntityTypeShape EntityType="ModelData.tbl_Log_WebService" Width="1.5" PointX="52.375" PointY="36.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Attendance_Mapping_DeviceOrg" Width="1.5" PointX="53.375" PointY="39.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Attendance_Priority" Width="1.5" PointX="53.375" PointY="42.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Attendance_Rules" Width="1.5" PointX="54.375" PointY="10.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Attendance_Summary_Sync" Width="1.5" PointX="54.375" PointY="13.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Cut_Off_Period" Width="1.5" PointX="54.375" PointY="16.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_User_Attendance" Width="1.5" PointX="36.375" PointY="26.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Attendance_Finger_ID" Width="1.5" PointX="49.375" PointY="52.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Attendance_Leave" Width="1.5" PointX="52.375" PointY="51.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Attendance_Device" Width="1.5" PointX="53.375" PointY="7.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Attendance_Request_Details" Width="1.5" PointX="24.375" PointY="54.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Attendance_Request" Width="1.5" PointX="21.375" PointY="54.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Attendance_History_Upload" Width="1.5" PointX="53.375" PointY="28.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Attendance_Summary_Sync" Width="1.5" PointX="54.375" PointY="19.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Menu_Ess" Width="1.5" PointX="54.375" PointY="24.75" />
+        <EntityTypeShape EntityType="ModelData.vw_User_Report_Attendance" Width="1.5" PointX="52.375" PointY="46.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Appointment_Status_ALL" Width="1.5" PointX="16.375" PointY="54.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Upload_Staging" Width="1.5" PointX="54.375" PointY="46.125" />
+        <EntityTypeShape EntityType="ModelData.tbl_Upload_Staging_Detail" Width="1.5" PointX="58.875" PointY="46.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Upload_Staging_Header" Width="1.5" PointX="56.625" PointY="47.625" />
+        <AssociationConnector Association="ModelData.FK_tbl_Upload_Staging_Header_tbl_Upload_Staging" />
+        <AssociationConnector Association="ModelData.FK_tbl_Upload_Staging_Detail_tbl_Upload_Staging_Header" />
+        <EntityTypeShape EntityType="ModelData.vw_Payroll_Detail_Calculation" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Employee_Leave" Width="1.5" PointX="26.375" PointY="54.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Employee_Leave_Entitlement_Restriction" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="ModelData.vw_SessionKey" Width="1.5" PointX="3.375" PointY="12.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_User_Mobile" Width="1.5" PointX="48.625" PointY="61.5" />
+        <AssociationConnector Association="ModelData.FK_tbl_User_Mobile_tbl_Employee" />
+        <AssociationConnector Association="ModelData.FK_tbl_User_Mobile_tbl_User" />
+        <EntityTypeShape EntityType="ModelData.vw_Timeline_Mobile" Width="1.5" PointX="32.375" PointY="54.75" />
+        <EntityTypeShape EntityType="ModelData.vw_Calculation_Tax_History" Width="1.5" PointX="34.375" PointY="54.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Customer_Notice" Width="1.5" PointX="54.375" PointY="33.75" />
+        <EntityTypeShape EntityType="ModelData.tbl_Notification_Template" Width="1.5" PointX="3" PointY="159.125" />
+        <AssociationConnector Association="ModelData.FK_tbl_Notification_Template_tbl_Menu_Function" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

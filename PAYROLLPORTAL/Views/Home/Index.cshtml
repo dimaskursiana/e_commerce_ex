@@ -1,0 +1,1310 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-us">
+@model APP_MODEL.ModelData.Global_Customer_Notice
+@using APP_COMMON;
+@{
+    Layout = null;
+}
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="BENEMICA" />
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="~/Content/css/Merriweather.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/dark.css" rel="stylesheet" />
+
+    <!-- Media Agency Demo Specific Stylesheet -->
+    <link href="~/Content/demos/app-landing/app-landing.css" rel="stylesheet" />
+    <!-- / -->
+    <link href="~/Content/css/font-icons.css" rel="stylesheet" />
+    <link href="~/Content/one-page/css/et-line.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/css/magnific-popup.css" rel="stylesheet" />
+
+    <!-- Date & Time Picker CSS -->
+    <link href="~/Content/css/components/datepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/components/timepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/components/daterangepicker.css" rel="stylesheet" />
+
+    <link href="~/Content/demos/app-landing/css/fonts.css" rel="stylesheet" />
+
+    <!-- Bootstrap Switch CSS -->
+    <link href="~/Content/css/components/bs-switches.css" rel="stylesheet" />
+
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="~/Content/demos/app-landing/css/colors.css" rel="stylesheet" />
+
+    <!--New YourStyle CSS-->
+    <link href="~/Content/your_style.css?v028" rel="stylesheet" />
+
+    <!-- Document Title
+    ============================================= -->
+    <title>Payroll Software Indonesia and HR System Terbaik Indonesia</title>
+    <meta name="description" content="Benemica is the Best Payroll Software Indonesia and HR System Terbaik Indonesia. As a Software Payrol Indonesia, Benemica delivers innovative cloud-based human management solution, designed through comprehensive research of 100+ organizations across different industries.">
+    <meta property="og:title" content="Payroll Software Indonesia and HR System Terbaik Indonesia" />
+    <meta property="og:url" content="https://www.benemica.com" />
+    <meta property="og:description" content="Benemica is the Best Payroll Software Indonesia and HR System Terbaik Indonesia. As a Software Payrol Indonesia, Benemica delivers innovative cloud-based human management solution, designed through comprehensive research of 100+ organizations across different industries.">
+    <meta property="og:image" content="https://www.benemica.com/Content/demos/app-landing/images/logo-i-benemica.png">
+    <meta property="og:type" content="website" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Content/images/favicon/favicon.ico?v001" type="image/x-icon">
+    <link rel="icon" href="~/Content/images/favicon/favicon.ico?v001" type="image/x-icon">
+</head>
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="split-menu transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+
+                        <a href="../" class="standard-logo" data-dark-logo="Content/demos/app-landing/images/benemica-official-dark.png?v001"><img src="Content/demos/app-landing/images/benemica-official.png?v001" alt="Software Payroll Indonesia &  HR System Indonesia"></a>
+                        <a href="../" class="retina-logo" data-dark-logo="Content/demos/app-landing/images/logo-dark@2x-benemica.png?v001"><img src="Content/demos/app-landing/images/logo@2x-benemica.png?v001" alt="Payroll Software Indonesia & HRIS Indonesia"></a>
+                    </div><!-- #logo end -->
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu" class="with-arrows clearfix not-dark">
+
+                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160"></ul>
+
+                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
+
+                            <li>
+                                <a href="#" data-href="#section-why-benemica"><div>Why Benemica</div></a>
+                            </li>
+                            <li>
+                                <a href="#" data-href="#section-features"><div>Feature</div></a>
+                            </li>
+                            <li>
+                                <a href="#" data-href="#section-pricing"><div>Pricing</div></a>
+                            </li>
+
+                            <li>
+                                <a href="#" data-href="#section-faqs"><div>Partners</div></a>
+                                <ul>
+                                    <li>@Html.ActionLink("Why with us?", "whywithus", "partners")</li>
+                                    <li>@Html.ActionLink("Become a partner", "becomeapartner", "partners")</li>
+                                    <li>@Html.ActionLink("Our partners", "ourpartners", "partners")</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" data-href="#section-nextgen"><div>More Resource</div></a>
+                                <ul>
+                                    <li><a href="#" data-href="#section-nextgen"><div>Blog</div></a></li>
+                                    <li>@Html.ActionLink("FAQ", "faq", "moreresource")</li>
+                                    <li>@Html.ActionLink("Help", "help", "moreresource")</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </nav><!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+        <!--Contain-->
+        <section id="slider" class="slider-element full-screen slider-parallax">
+            <div class="slider-parallax-inner" style="background: url('Content/demos/app-landing/images/hero/hero.jpg?v001') center center no-repeat; background-size: cover;">
+                <div class="vertical-middle" style="z-index: 2;">
+                    <div class="container dark clearfix">
+                        <div class="row clearfix">
+                            <div class="col-lg-8 col-md-9">
+                                <div class="emphasis-title">
+                                    <h1 class="font-body"><i>&ldquo;Beneficial, Dynamic, <br /> Accurate.&rdquo;</i></h1>
+                                </div>
+                                <div>
+                                    <h4 class="font-body"><i>Looking for Integrated ESS &#45; HR Admin &#45; Payroll &#45; Tax System ?</i></h4>
+                                </div>
+                                <a href="https://api.whatsapp.com/send?phone=6285891297805&text=HelloBenemica" class="pts-switch-content-left button button-large button-white button-light capitalize classLinkWhatsapp" style="border-radius: 23px;" target="_blank"><img src="~/Content/images/icons8-whatsapp-48.png">Chat Now</a>
+                                <a href="#modal-get-started_2" data-lightbox="inline" data-speed="1250" data-offset="160" class="pts-switch-content-left button button-large button-white button-light capitalize" style="border-radius: 23px;">Request for a Demo</a>
+                                <a href="https://www.youtube.com/watch?v=BINBW50VcPc" class="hero-action-link" data-lightbox="iframe"><i class="icon-play-sign"></i> Watch the Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" style="position: absolute; height: 100%; z-index: 1;">
+                    <div class="video-overlay" style="background: rgba(0,0,0,0.2);"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <!-- Modal -->
+                <div class="modal1 mfp-hide" id="modal-login">
+                    <div class="block divcenter" style="background-color: #FFF; max-width: 400px;">
+                        <div style="padding: 50px;">
+                            <h3 class="font-body">Login to your Account</h3>
+                            <form action="#" method="post" class="nobottommargin">
+                                <div class="col_full">
+                                    <label class="font-body capitalize" for="login-form-modal-username">Username:</label>
+                                    <input type="text" id="login-form-modal-username" name="login-form-modal-username" value="" class="form-control" />
+                                </div>
+
+                                <div class="col_full">
+                                    <label class="font-body capitalize" for="login-form-modal-password">Password:</label>
+                                    <input type="password" id="login-form-modal-password" name="login-form-modal-password" value="" class="form-control" />
+                                </div>
+
+                                <div class="col_full nobottommargin">
+                                    <button class="button button-rounded nomargin" id="login-form-modal-submit" name="login-form-modal-submit" value="login">Login</button>
+                                    <a href="#" class="fright">Forgot Password?</a>
+                                </div>
+                            </form>
+                            <div class="line line-sm"></div>
+                            <a href="#" class="button button-rounded btn-block t400 center capitalize si-facebook si-colored noleftmargin norightmargin">Login with Facebook</a>
+                            <a href="#" class="button button-rounded btn-block t400 center capitalize si-gplus si-colored nomargin">Login with Google</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container clearfix">
+                    <center><h1 style="font-size: 42px;" class="font-body ls1 t400">Payroll Software Indonesia & HRIS</h1></center>
+                    <center><h4 style="font-size: 24px;" class="font-body ls1 t400">Benemica is the Best <a href="https://benemica.com">Payroll Software Indonesia</a> & Reputable <a href="https://benemica.com/partners/whywithus" rel="nofollow">HRIS Indonesia</a> . Benemica is trusted by many clients in all industries in Indonesia and Worldwide.</h4></center>
+                    <br><br>
+
+                    <div id="section-why-benemica" class="page-section topmargin bottommargin-lg">
+                        <div class="row clearfix">
+
+                            <div class="col-lg-5">
+                                <div class="emphasis-title bottommargin-sm">
+                                    <h2 style="font-size: 42px;" class="font-body ls1 t400">Why Benemica</h2>
+                                </div>
+                                <p style="color: #777;" class="lead">
+                                    Benemica delivers innovative cloud-based human management solution, designed through comprehensive research of 100+ organizations
+                                    across different industries.
+                                    <br><br>We offer you a proven process to manage, engage, develop, grow your organization's employees and increase agility on overall payroll processes.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-7 center">
+                                <div class="container clearfix">
+                                    <div class="row" data-animate="fadeInRight">
+                                        <div class="col-lg-6 bottommargin">
+                                            <i class="i-plain i-large icon-et-wallet inline-block" style="margin-bottom: 30px; color: #999;"></i>
+                                            <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+                                                <h4 style="font-size: 16px;">Affordable</h4>
+                                            </div>
+                                            <p class="" style="line-height: 26px;">Pay what you only use, no hidden cost.</p>
+                                        </div>
+
+                                        <div class="col-lg-6 bottommargin">
+                                            <i class="i-plain i-large icon-et-linegraph inline-block" style="margin-bottom: 30px; color: #999;"></i>
+                                            <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+                                                <h4 style="font-size: 16px;">Convert Capital Expense for Opex</h4>
+                                            </div>
+                                            <p class="" style="line-height: 26px;">Lower your investment and uncertainty of risk.</p>
+                                        </div>
+
+                                        <div class="col-lg-6 bottommargin">
+                                            <i class="i-plain i-large icon-et-tools-2 inline-block" style="margin-bottom: 30px; color: #999;"></i>
+                                            <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+                                                <h4 style="font-size: 16px;">Quick Implementation</h4>
+                                            </div>
+                                            <p class="" style="line-height: 26px;">Max in 2 weeks, assist you to keep comply with regulations.</p>
+                                        </div>
+
+                                        <div class="col-lg-6 bottommargin">
+                                            <i class="i-plain i-large icon-et-shield inline-block" style="margin-bottom: 30px; color: #999;"></i>
+                                            <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+                                                <h4 style="font-size: 16px;">Secure</h4>
+                                            </div>
+                                            <p class="" style="line-height: 26px;">No IT installation, already pass security testing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="line"></div><div class="clear"></div>
+                    <center><h1 style="font-size: 42px;" class="font-body ls1 t400">Best Benemica Program Benefit</h1></center>
+                    <center><h4 style="font-size: 24px;" class="font-body ls1 t400">Program Bonafit3 is one of our recent and best deal program, it includes additional benefits from our Bank Partners. Limited Benemica <strong> FREE </strong> program is still available for you, <a href="https://api.whatsapp.com/send?phone=6285891297805&text=Hello%20BENEMICA,%0AName%20/%20email%20:%20%0ACompany%20Name%20:%20%0AMessage%20:%20" class="classLinkWhatsappFormat" target="_blank">click here</a> or chat with us to check your company eligibility.</h4></center>
+                    <div id="section-promotion" class="page-section bottommargin-lg">
+                        <div class="row clearfix">
+                            <div class="col-lg-12 center">
+                                <section id="slider" class="slider-element boxed-slider">
+                                    <div class="container clearfix">
+                                        <div class="fslider" data-animation="fade" data-thumbs="true" data-arrows="false" data-speed="1200" data-pause="5000">
+                                            <div class="flexslider">
+                                                <div class="slider-wrap">
+                                                    <div class="slide" data-thumb="/Content/images/slider/boxed/thumbs/2.jpg?v002">
+                                                        <a>
+                                                            <img src="~/Content/images/slider/boxed/2.jpg?v002" alt="Slide 2">
+                                                            <p hidden>Bonafit3</p>
+                                                            <p hidden>Subscribe 3 bulan dapat 1 bulan untuk 10 perushaan pertama</p>
+                                                            <p hidden>Fitur utama</p>
+                                                            <p hidden>
+                                                                <ul hidden>
+                                                                    <li hidden>Manajemen Karyawan</li>
+                                                                    <li hidden>Manajemen Pengguna dan kon?gurasi data gaji dan pajak</li>
+                                                                    <li hidden>Manajemen potongan/pengurang gaji</li>
+                                                                    <li hidden>Manajemen perhitungan BPJS Kesehatan dan BPJS Ketenagakerjaan</li>
+                                                                    <li hidden>Fitur Input dan upload data persiapan penggajian</li>
+                                                                    <li hidden>Hitung Gaji dan Pajak Penghasilan</li>
+                                                                    <li hidden>Pembuatan Bank ?le</li>
+                                                                </ul>
+                                                            </p>
+                                                            <p hidden>Layanan mandiri karyawan yang meliputi</p>
+                                                            <p hidden>
+                                                                <ul hidden>
+                                                                    <li hidden>e- Attendance, pencatatan kehadiran karyawan</li>
+                                                                    <li hidden>e-Leave, pengajuan cuti</li>
+                                                                    <li hidden>e-Claim, pengajuan Claim/Reimbursement</li>
+                                                                    <li hidden>e-Overtime, pengajuan lembur</li>
+                                                                    <li hidden>e-Payslip, Slip Gaji elektronik</li>
+                                                                </ul>
+                                                            </p>
+                                                            @*<div class="flex-caption slider-caption-bg slider-caption-top-right" align="left">
+                                                                <ul>
+                                                                <li>Cukup bayar 3 bulan untuk 12 bulan pemakaian.</li>
+                                                                <li>Subscription 3 bulan adalah Package Advance.</li>
+                                                                <li>Berlaku untuk Perusahaan dengan jumlah minimum 50 Karyawan.</li>
+                                                                <li>Hanya berlaku untuk client baru.</li>
+                                                                <li>Syarat dan ketentuan berlaku.</li>
+                                                                </ul>
+                                                                </div>*@
+                                                        </a>
+                                                    </div>
+                                                    <div class="slide" data-thumb="/Content/images/slider/boxed/thumbs/3.jpg?v004">
+                                                        <a>
+                                                            <img src="~/Content/images/slider/boxed/3.jpg?v04" alt="Slide 3">
+                                                            <p hidden>Bonafit3</p>
+                                                            <p hidden>Subscribe 6 bulan dapat 12 bulan untuk 25 perushaan pertama</p>
+                                                            <p hidden>Fitur utama</p>
+                                                            <p hidden>
+                                                                <ul hidden>
+                                                                    <li hidden>Manajemen Karyawan</li>
+                                                                    <li hidden>Manajemen Pengguna dan kon?gurasi data gaji dan pajak</li>
+                                                                    <li hidden>Manajemen potongan/pengurang gaji</li>
+                                                                    <li hidden>Manajemen perhitungan BPJS Kesehatan dan BPJS Ketenagakerjaan</li>
+                                                                    <li hidden>Fitur Input dan upload data persiapan penggajian</li>
+                                                                    <li hidden>Hitung Gaji dan Pajak Penghasilan</li>
+                                                                    <li hidden>Pembuatan Bank ?le</li>
+                                                                </ul>
+                                                            </p>
+                                                            <p hidden>Layanan mandiri karyawan yang meliputi</p>
+                                                            <p hidden>
+                                                                <ul hidden>
+                                                                    <li hidden>e- Attendance, pencatatan kehadiran karyawan</li>
+                                                                    <li hidden>e-Leave, pengajuan cuti</li>
+                                                                    <li hidden>e-Claim, pengajuan Claim/Reimbursement</li>
+                                                                    <li hidden>e-Overtime, pengajuan lembur</li>
+                                                                    <li hidden>e-Payslip, Slip Gaji elektronik</li>
+                                                                </ul>
+                                                            </p>
+                                                            @*<div class="flex-caption slider-caption-bg slider-caption-top-right" align="left">
+                                                                    <ul>
+                                                                        <li>Cukup bayar 6 bulan untuk 12 bulan pemakaian.</li>
+                                                                        <li>Subscription 6 bulan adalah Package Advance.</li>
+                                                                        <li>Berlaku untuk Perusahaan dengan jumlah minimum 20 Karyawan.</li>
+                                                                        <li>Hanya berlaku untuk client baru.</li>
+                                                                        <li>Syarat dan ketentuan berlaku.</li>
+                                                                    </ul>
+                                                                </div>*@
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line"></div><div class="clear"></div>
+
+                    <div id="section-features" class="page-section bottommargin-lg">
+                        <div class="row clearfix">
+
+                            <div class="col-lg-7 center">
+                                <img src="~/Content/demos/app-landing/images/section/iphone-watch.png?v001" alt="Human Resource and Payroll in one platform" data-animate="fadeInLeft">
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="emphasis-title bottommargin-sm">
+                                    <h2 style="font-size: 42px;" class="font-body ls1 t400">Human Resource & Payroll in one platform</h2>
+                                </div>
+                                <p style="color: #777;" class="lead">Bridging the gap between Employer, HR and Employees</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="line"></div><div class="clear"></div>
+
+                    <div id="section-stunning-graphics" class="page-section topmargin bottommargin-lg">
+                        <div class="row clearfix">
+
+                            <div class="col-lg-5">
+                                <div class="emphasis-title bottommargin-sm">
+                                    <h2 style="font-size: 42px;" class="font-body ls1 t400">Human Resource Management</h2>
+                                </div>
+                                <p1 style="font-size: 28px;" class="font-body ls1 t400">Employee Administration</p1>
+                                <p style="color: #777;" class="lead">Employee onboarding, termination, and mutation </p>
+                                <p1 style="font-size: 28px;" class="font-body ls1 t400">Employee Self Services</p1>
+                                <p style="color: #777;" class="lead">e-Attendance, e-Leave, e-Claim, e-Overtime and e-Payslip from web and mobile</p>
+                            </div>
+
+                            <div class="col-lg-7 center">
+                                <img src="~/Content/demos/app-landing/images/section/iphone-nexus.png?v001" alt="Stunning Graphics" data-animate="fadeInRight">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="line"></div><div class="clear"></div>
+
+                    <div id="section-secured-solutions" class="page-section topmargin bottommargin-lg">
+                        <div class="row clearfix">
+
+                            <div class="col-lg-7 center">
+                                <img src="~/Content/demos/app-landing/images/section/iphone-3d.png?v001" alt="Stunning Graphics" data-animate="fadeInLeft">
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="emphasis-title bottommargin-sm">
+                                    <h2 style="font-size: 42px;" class="font-body ls1 t400">Payroll in 3 Steps</h2>
+                                </div>
+                                <p style="color: #777;" class="lead"><p1 style="font-size: 28px;" class="font-body ls1 t400">Prepare</p1> data can be input or upload using Excel template </p>
+                                <p style="color: #777;" class="lead"><p1 style="font-size: 28px;" class="font-body ls1 t400">Calculate & Review</p1> income tax from blue collars to expatriates, for employee and non-employee, for all payment types (regular, irregular, severance), with configurable tax policies (gross, net, mix/both) </p>
+                                <p style="color: #777;" class="lead"><p1 style="font-size: 28px;" class="font-body ls1 t400">Pay</p1> to various Banks, Multi cycle and Bank account </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line"></div><div class="clear"></div>
+
+                </div>
+
+                <div class="clear bottommargin"></div>
+
+                <div class="container clearfix">
+                    <div id="section-pricing" class="page-section nopadding nomargin">
+
+                        @*<div class="pricing-tenure-switcher center bottommargin-sm" data-container="#pricing-switch">
+                                <span class="pts-left">Monthly</span>
+                                <div class="pts-switcher">
+                                    <div class="switch">
+                                        <input id="switch-toggle-pricing-tenure" class="switch-toggle switch-toggle-round" type="checkbox">
+                                        <label for="switch-toggle-pricing-tenure"></label>
+                                    </div>
+                                </div>
+                                <span class="pts-right">Yearly</span>
+                            </div>*@
+
+                        <div id="pricing-switch" class="pricing row bottommargin-lg clearfix">
+
+                            <div class="col-lg-4 col-md-6">
+
+                                <div class="pricing-box">
+                                    @*<div class="pricing-title">
+                                            <h3>STARTUP/ NON-PROFIT ORGANIZATION</h3>
+                                        </div>*@
+                                    <div class="pricing-price">
+                                        FREE<span class="price-tenure">Chance to get up to 1 year free</span>
+                                    </div>
+                                    <div class="pricing-features" align="left">
+                                        <ul>
+                                            <li><span>&#8226;</span> Startup/ Non-Profit Organization</li>
+                                            <li><span>&#8226;</span> One Company or Organization</li>
+                                            <li><span>&#8226;</span> Employee management</li>
+                                            <li><span>&#8226;</span> Employee benefit program</li>
+                                            <li><span>&#8226;</span> Basic Payroll</li>
+                                            <li><span>&#8226;</span> Single disbursement</li>
+                                            <li><span>&#8226;</span> Comprehensive and flexible tax options</li>
+                                            <li><span>&#8226;</span> Flexible Payslip Options</li>
+                                            <li><span>&#8226;</span> File to eSPT</li>
+                                            <li><span>&#8226;</span> Standard reports</li>
+                                            <li><span>&#8226;</span> Chat, Phone & Email Support</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li style="padding-bottom: 0px;padding-top: 0px;">&nbsp;</li>
+                                            @*<li><strong>Single</strong> Tenant or Organization</li>
+                                                <li><strong>Predefine</strong> Business Data</li>
+                                                <li><strong>Flexible</strong> Payslip Options</li>
+                                                <li>(Hardcopy, email, e-Payslip)</li>
+                                                <li>Phone &amp; Email Support</li>
+                                                <li>&nbsp;</li>
+                                                <li>&nbsp;</li>
+                                                <label style="margin-bottom: 0px;">&nbsp;</label>*@
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-action col-lg-8 offset-lg-2">
+                                        @*<a href="https://api.whatsapp.com/send?phone=6285891297805&text=Hello%20BENEMICA,%0AName%20/%20email%20:%20%0ACompany%20Name%20:%20%0AMessage%20:%20" class="btn btn-primary btn-lg btn-block classLinkWhatsappFormat" style="border-radius: 23px; font-size:16px; font-weight:bold; " target="_blank">Request A Quote</a>*@
+                                        @Html.ActionLink("Apply Now", "free", "pricing", null, new { @class = "btn btn-primary btn-lg btn-block", @style = "border-radius: 23px; font-size:16px; font-weight:bold;" })
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+
+                                <div class="pricing-box">
+                                    @*<div class="pricing-title">
+                                            <h3>&nbsp;</h3>
+                                        </div>*@
+                                    <div class="pricing-price">
+                                        BASIC<span class="price-tenure">Request a quote for best offer</span>
+                                        @*<div class="pts-switch-content-left"><span class="price-unit">Rp </span>35,000<span class="price-tenure">Monthly Per Employee</span></div>*@
+                                        @*<div class="pts-switch-content-right"><span class="price-unit">Rp </span>420,000<span class="price-tenure">Yearly Per Employee</span></div>*@
+                                    </div>
+                                    <div class="pricing-features" align="left">
+                                        <ul>
+                                            <li><span>&#8226;</span> One Company or Organization</li>
+                                            <li><span>&#8226;</span> Multi Branches and Tax IDs</li>
+                                            <li><span>&#8226;</span> Configurable Business Setting</li>
+                                            <li><span>&#8226;</span> Integration to Fingerprint device</li>
+                                            <li><span>&#8226;</span> Employee management</li>
+                                            <li><span>&#8226;</span> Employee benefit program</li>
+                                            <li><span>&#8226;</span> Flexible salary structure</li>
+                                            <li><span>&#8226;</span> Overtime compliance</li>
+                                            <li><span>&#8226;</span> Multi Deductions</li>
+                                            <li><span>&#8226;</span> Multi cycle of Payroll</li>
+                                            <li><span>&#8226;</span> Multi payroll disbursement</li>
+                                            <li><span>&#8226;</span> Comprehensive and flexible tax options</li>
+                                            <li><span>&#8226;</span> Flexible Payslip Options (Hardcopy, email, e-Payslip)</li>
+                                            @*<li style="padding-left: 0%;"><span>&#45;</span> (Hardcopy, email, e-Payslip)</li>*@
+                                            <li><span>&#8226;</span> Reports to Tax office</li>
+                                            <li><span>&#8226;</span> Comprehensive reports</li>
+                                            @*<li><span>&#8226;</span> Auditable data changes</li>*@
+                                            <li><span>&#8226;</span> Chat, Phone & Email Support</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            @*<li><strong>Single</strong> Tenant or Organization</li>
+                                                <li><strong>Configurable</strong> Business Data</li>
+                                                <li><strong>Flexible</strong> Payslip Options</li>
+                                                <li> (Hardcopy, email, e-Payslip)</li>
+                                                <li>Phone &amp; Email Support</li>
+                                                <li>
+                                                    <i class="icon-star3"></i>
+                                                    <i class="icon-star3"></i>
+                                                    <i class="icon-star3"></i>
+                                                    <i class="icon-star3"></i>
+                                                    <i class="icon-star3"></i>
+                                                </li>
+                                                <li>&nbsp;</li>
+                                                <label style="margin-bottom: 0px;">&nbsp;</label>*@
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-action col-lg-8 offset-lg-2">
+                                        <a href="https://api.whatsapp.com/send?phone=6285891297805&text=Hello%20BENEMICA,%0AName%20/%20email%20:%20%0ACompany%20Name%20:%20%0AMessage%20:%20" class="btn btn-primary btn-lg btn-block classLinkWhatsappFormat" style="border-radius: 23px; font-size:16px; font-weight:bold; " target="_blank">Request A Quote</a>
+                                        @*@Html.ActionLink("Request A Quote", "basic", "pricing", null, new { @class = "btn btn-primary btn-lg btn-block", @style = "border-radius: 23px; font-size:16px; font-weight:bold;" })*@
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3">
+
+                                <div class="pricing-box">
+                                    @*<div class="pricing-title">
+                                            <h3>&nbsp;</h3>
+                                        </div>*@
+                                    <div class="pricing-price">
+                                        ADVANCE<span class="price-tenure">Request a quote for best offer</span>
+                                        @*<div class="pts-switch-content-left"><span class="price-unit">Rp</span>50,000<span class="price-tenure">Monthly Per Employee</span></div>*@
+                                        @*<div class="pts-switch-content-right"><span class="price-unit">Rp</span>600,000<span class="price-tenure">Yearly Per Employee</span></div>*@
+                                    </div>
+                                    <div class="pricing-features" align="left">
+                                        <ul>
+                                            <li><span>&#8226;</span> Multi companies or Organizations</li>
+                                            <li><span>&#8226;</span> Multi Branches and Tax IDs</li>
+                                            <li><span>&#8226;</span> Configurable Business Setting</li>
+                                            <li><span>&#8226;</span> Integration to Fingerprint device</li>
+                                            <li><span>&#8226;</span> Employee Self Services:</li>
+                                            <li><span>&#45;</span> e-Attendance (geo-tagging + Selfie)</li>
+                                            <li><span>&#45;</span> e-Leave</li>
+                                            <li><span>&#45;</span> e-Claim/ Reimbursement</li>
+                                            <li><span>&#45;</span> e-Overtime</li>
+                                            <li><span>&#45;</span> e-payslip</li>
+                                            @*<li><span>&#8226;</span> Web and Mobile Apps</li>*@
+                                            <li><span>&#8226;</span> Employee management</li>
+                                            <li><span>&#8226;</span> Employee benefit program</li>
+                                            <li><span>&#8226;</span> Flexible salary structure</li>
+                                            <li><span>&#8226;</span> Overtime compliance</li>
+                                            <li><span>&#8226;</span> Multi Deductions</li>
+                                            <li><span>&#8226;</span> Multi cycle of Payroll</li>
+                                            <li><span>&#8226;</span> Multi payroll disbursement</li>
+                                            @*<li><span>&#8226;</span> Automatic payment allocation</li>*@
+                                            <li><span>&#8226;</span> Comprehensive and flexible tax options</li>
+                                            @*<li><span>&#8226;</span> Flexible Payslip Options</li>*@
+                                            @*<li><span>&#8226;</span> (Hardcopy, email, e-Payslip)</li>*@
+                                            @*<li><span>&#8226;</span> File to eSPT</li>*@
+                                            <li><span>&#8226;</span> Comprehensive reports</li>
+                                            @*<li><span>&#8226;</span> Auditable data changes</li>*@
+                                            <li><span>&#8226;</span> Chat, Phone & Email Support</li>
+                                            <li style="padding-bottom: 0px;padding-top: 0px;">&nbsp;</li>
+                                            @*<li><strong>Multi</strong> Tenant or Organization</li>
+                                                <li><strong>Configurable</strong> Business Data</li>
+                                                <li><strong>Flexible</strong> Payslip Options</li>
+                                                <li> (Hardcopy, email, e-Payslip)</li>
+                                                <li><strong>Employee Self Services</strong></li>
+                                                <li>(Attendance, Leave, Claim, and Overtime through web and mobile app)</li>
+                                                <li>Phone &amp; Email Support</li>*@
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-action col-lg-8 offset-lg-2">
+                                        <a href="https://api.whatsapp.com/send?phone=6285891297805&text=Hello%20BENEMICA,%0AName%20/%20email%20:%20%0ACompany%20Name%20:%20%0AMessage%20:%20" class="btn btn-primary btn-lg btn-block classLinkWhatsappFormat" style="border-radius: 23px; font-size:16px; font-weight:bold; " target="_blank">Request A Quote</a>
+                                        @*@Html.ActionLink("Request A Quote", "advance", "pricing", null, new { @class = "btn btn-primary btn-lg btn-block", @style = "border-radius: 23px; font-size:16px; font-weight:bold;" })*@
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="line"></div><div class="clear"></div>
+
+                </div>
+
+                <div class="section bottommargin-lg" style="background-color: #ffffff; border-top: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; margin-top: 0px">
+                    <div class="fslider testimonial testimonial-full nobg noborder noshadow" data-animation="fade" style="max-width: none;">
+                        <center><h1 style="font-size: 22px;" class="font-body ls1 t400">Comprehensive, hassle-free, and accurate, manage HR - Payroll internally like a Pro!</h1></center>
+                        <div class="flexslider">
+                            <div class="slider-wrap divcenter" style="max-width: 650px;">
+                                <div class="slide">
+                                    <div class="testimoni-image-cos">
+                                        <a href="#"><img src="~/Content/images/testimonials/TMN.jpg" alt="Customer Testimonails" class="center image-testimoni"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            &ldquo;Benemica help us save much time dealing with employee tax calculation and reporting, which usually take our HR 2-3 days every month. Now we can focus more on the other side of HR, such as people development. There is a lot of different vendor out there, what make Benemica difference is the service level that Benemica give to the client. They are so fast response. It is a good investment to engage with Benemica&rdquo;
+                                        </p>
+                                        <div class="testi-meta">
+                                            TMN
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="testimoni-image-cos">
+                                        <a href="#"><img src="~/Content/images/testimonials/BTS.jpg" alt="Customer Testimonails" class="center image-testimoni"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            &ldquo;Thank you so much to Benemica for making our HR matters absolutely easy! Kudos to everyone involved with this work&rdquo;
+                                        </p>
+                                        <div class="testi-meta">
+                                            BTS
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="testimoni-image-cos testimoni-image-responsive-1">
+                                        <a href="#"><img src="~/Content/images/testimonials/Griya.jpg" alt="Customer Testimonails" class="center image-testimoni"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            &ldquo;Benemica simpifly payroll process of employees and doctors in our Clinics. Practical, and made Finance easier to manage tax. Benemica support team also very helpful in timely manner and professional. Thank you Benemica&rdquo;
+                                        </p>
+                                        <div class="testi-meta">
+                                            Griya Kesehatan Indonesia
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="testimoni-image-cos">
+                                        <a href="#"><img src="~/Content/images/testimonials/ASA.jpg" alt="Customer Testimonails" class="center image-testimoni"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            &ldquo;Benemica is the best online payroll software. Easy to use and accurate. We are being supported by Benemica&rdquo;
+                                        </p>
+                                        <div class="testi-meta">
+                                            Asa Indonesia
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="testimoni-image-cos">
+                                        <a href="#"><img src="~/Content/images/testimonials/MIKA.jpg" alt="Customer Testimonails" class="center image-testimoni"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            &ldquo;Dengan adanya Benemica sangat membantu dalam sistem penggajian di MIKA, khususnya dalam  penghitungan PPh 21, BPJS Ketenagakerjaan dan BPJS  Pensiun. Beberapa pekerjaan jadi lebih mudah dengan  adanya program payroll Benemica. Dan untuk staf benemica responnya sangat cepat dan baik sekali,  senang bisa Kerjasama&rdquo;
+                                        </p>
+                                        <div class="testi-meta">
+                                            MIKA
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="testimoni-image-cos">
+                                        <a href="#"><img src="~/Content/images/testimonials/Multitek.jpg" alt="Customer Testimonails" class="center image-testimoni"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            &ldquo;Overall this application is simple and user friendly. It is really helpful to manage and to monitor attendance&rdquo;
+                                        </p>
+                                        <div class="testi-meta">
+                                            Multitek Indopanca
+                                        </div>
+                                    </div>
+                                </div>
+                                @*<div class="slide">
+                    <div class="testi-image">
+                        <a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+                    </div>
+                    <div class="testi-content">
+                        <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+                        <div class="testi-meta">
+                            Collis Ta'eed
+                            <span>Envato Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="testi-image">
+                        <a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+                    </div>
+                    <div class="testi-content">
+                        <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
+                        <div class="testi-meta">
+                            John Doe
+                            <span>XYZ Inc.</span>
+                        </div>
+                    </div>
+                </div>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @using (Html.BeginForm("Index", "ContactSupport", FormMethod.Post, new { id = "section-contact-us" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="container clearfix">
+                        <div class="page-section nopadding nomargin">
+
+                            <h2 class="center font-body bottommargin-lg">Contact Us</h2>
+                            <div class="row topmargin-sm clearfix">
+                                <div class="col-lg-12 col-md-6 bottommargin-sm" align="center">
+                                    <h4>Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible</h4>
+                                </div>
+                            </div>
+
+                            <div class="row topmargin-sm clearfix">
+                                <div class="col-lg-5 offset-lg-1 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Company Name*</h4>
+                                    @Html.TextBoxFor(model => model.Company_Name, new { @class = "form-control no-error-msg required-contact", id = "contactCompanyName", required = "required", placeholder = "Your company name, website (if any)", maxlength = "75" })
+                                </div>
+
+                                <div class="col-lg-5 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Number Of Employees*</h4>
+                                    @Html.TextBoxFor(model => model.Number_Employee, new { @class = "form-control no-error-msg inputNumber required-contact", id = "contactNumberEmployee", required = "required", placeholder = "e.g. 100", maxlength = "7" })
+                                </div>
+
+                                <div class="col-lg-5 offset-lg-1 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Contact Name*</h4>
+                                    @Html.TextBoxFor(model => model.Contact_Name, new { @class = "form-control no-error-msg required-contact", id = "contactContactName", required = "required", placeholder = "Your name", maxlength = "75" })
+                                </div>
+
+                                <div class="col-lg-5 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Title*</h4>
+                                    @Html.TextBoxFor(model => model.Title, new { @class = "form-control no-error-msg required-contact", id = "contactTitle", required = "required", placeholder = "Your role or position", maxlength = "75" })
+                                </div>
+
+                                <div class="col-lg-5 offset-lg-1 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Email*</h4>
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control no-error-msg required-contact", type = "email", id = "contactEmail", required = "required", placeholder = "Your email", maxlength = "75" })
+                                </div>
+
+                                <div class="col-lg-5 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Phone*</h4>
+                                    @Html.TextBoxFor(model => model.Phone, new { @class = "form-control no-error-msg inputNumber required-contact", id = "contactPhone", required = "required", placeholder = "Your mobile or office phone number", maxlength = "15" })
+                                </div>
+
+                                <div class="col-lg-10 offset-lg-1 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body">Message*</h4>
+                                    @Html.TextAreaFor(model => model.Message, new { @class = "form-control no-error-msg required-contact", rows = "6", cols = "25", id = "contactMessage", required = "required", maxlength = "255", placeholder = "Your Message (Max 255 character)" })
+                                </div>
+
+                                <div class="col-lg-2 offset-lg-5 col-md-6 bottommargin-sm" align="center">
+                                    <button type="button" data-mfp-src="#myModal1PopUp" class="btn btn-primary btn-lg btn-block" id="btnContactSupport" style="border-radius: 23px; font-size:16px"><b>Send Email</b></button>
+                                    @*<a href="https://api.whatsapp.com/send?phone=6285891297805&text=HelloBenemica" class="pts-switch-content-left button button-large button-white button-light capitalize classLinkWhatsapp" style="border-radius: 23px;" target="_blank"><img src="~/Content/images/icons8-whatsapp-48.png">Chat Now</a>*@
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                }
+
+                <!-- Modal_1 -->
+                <a href="#myModal1PopUp" data-lightbox="inline" class="classGetPopUp"></a>
+                <div class="modal1 mfp-hide" id="myModal1PopUp">
+                    <div class="block divcenter" style="background-color: #FFF; max-width: 500px;">
+                        <div class="feature-box fbox-center fbox-effect nobottomborder nobottommargin" style="padding: 40px;">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-email2 i-alt"></i></a>
+                            </div>
+                            <h3>Email<span class="subtitle">Send Email Successfull</span></h3>
+                        </div>
+                        <div class="section center nomargin" style="padding: 30px;">
+                            <a href="../" class="button">Home Page</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal_2 -->
+                @using (Html.BeginForm("Index", "ContactSupport", FormMethod.Post, new { id = "modal-get-started_2", @class = "modal1 mfp-hide" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="block divcenter" style="background-color: #FFF; max-width: 800px;">
+                        <div style="padding: 50px;">
+                            <form action="#" id="get-started-form" method="post" class="nobottommargin">
+
+                                <div class="row clearfix">
+                                    <div class="col-md-8">
+                                        <h3 class="font-body">Schedule for a meeting or demo</h3>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div id="modal-get-started-package"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col_half">
+                                    <label class="font-body capitalize" for="get-started-form-company-name">Company Name*</label>
+                                    @Html.TextBoxFor(model => model.Company_Name, new { @class = "form-control required no-error-msg", id = "companyName", required = "required", placeholder = "Your company name, website (if any)", maxlength = "75" })
+                                </div>
+
+                                <div class="col_half col_last">
+                                    <label class="font-body capitalize" for="get-started-form-number-employee">Number of Employees*</label>
+                                    @Html.TextBoxFor(model => model.Number_Employee, new { @class = "form-control required no-error-msg inputNumber", id = "numberEmployee", required = "required", placeholder = "e.g. 100", maxlength = "7" })
+                                </div>
+
+                                <div class="col_half">
+                                    <label class="font-body capitalize" for="get-started-form-contact-name">Contact Name*</label>
+                                    @Html.TextBoxFor(model => model.Contact_Name, new { @class = "form-control required no-error-msg", id = "contactName", required = "required", placeholder = "Your name", maxlength = "75" })
+                                </div>
+
+                                <div class="col_half col_last">
+                                    <label class="font-body capitalize" for="get-started-form-title">Title*</label>
+                                    @Html.TextBoxFor(model => model.Title, new { @class = "form-control required no-error-msg", id = "title", required = "required", placeholder = "Your role or position", maxlength = "75" })
+                                </div>
+
+                                <div class="col_half">
+                                    <label class="font-body capitalize" for="get-started-form-email">Email*</label>
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control required no-error-msg", id = "email", required = "required", placeholder = "Your email", maxlength = "75" })
+                                </div>
+
+                                <div class="col_half col_last">
+                                    <label class="font-body capitalize" for="get-started-form-phone">Phone*</label>
+                                    @Html.TextBoxFor(model => model.Phone, new { @class = "form-control required no-error-msg inputNumber", id = "phone", required = "required", placeholder = "Your mobile or office phone number", maxlength = "15" })
+                                </div>
+
+                                <div class="col_half">
+                                    <label class="font-body capitalize" for="get-started-form-meeting-schedule">Propose Meeting Schedule*</label>
+                                    <input type="text" id="meetingSchedule" name="Meeting_Schedule" class="form-control datetimepicker-input datetimepicker3 tleft required" data-toggle="datetimepicker" data-target=".datetimepicker3" placeholder="e.g. MM/DD/YYYY 00:00 AM/PM">
+                                </div>
+
+                                <div class="col_half col_last">
+                                    <label class="font-body capitalize" for="get-started-form-meeting-schedule-location">Meeting location*</label>
+                                    @Html.TextBoxFor(model => model.Meeting_Location, new { @class = "form-control required no-error-msg", id = "meetingLocation", required = "required", placeholder = "e.g. Intiland Tower, 20th Floor", maxlength = "75" })
+                                </div>
+
+                                <div class="colFull col_full">
+                                    <label class="font-body capitalize" for="get-started-form-remark">Remark</label>
+                                    @Html.TextAreaFor(model => model.Remark, new { @class = "form-control", rows = "6", cols = "25", id = "remark", maxlength = "255", placeholder = "e.g. Please remind me one day before (Max 255 character)" })
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <!-- Package Selector Hidden Input Value Setter -->
+                                <div class="col_full col-lg-4 offset-lg-4 nobottommargin">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block" id="btnDemo" style="border-radius: 23px; font-size:16px" Disabled><b>Request Demo</b></button>
+                                    @*<a href="https://api.whatsapp.com/send?phone=6285891297805&text=HelloBenemica" class="pts-switch-content-left button button-large button-white button-light capitalize classLinkWhatsapp" style="border-radius: 23px;" target="_blank"><img src="~/Content/images/icons8-whatsapp-48.png">Chat Now</a>*@
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                }
+
+                <div class="clear"></div>
+
+                <div class="section notopmargin footer-stick" style="padding: 10px 0; background-color: #F8FAFB; border-top: 1px solid #E5E5E5;">
+                    <div class="container clearfix">
+
+                        <div class="row clearfix">
+                            <div class="col-lg-4">
+                                <div class="app-footer-features"><i class="icon-line2-globe-alt"></i><h5 class="font-body"><a href="#">Free Training</a><span> both in class or virtual</span></h5></div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="app-footer-features"><i class="icon-line2-notebook"></i><h5 class="font-body"><a href="#">99.99% Uptime </a><span>& friendly support team</span></h5></div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="app-footer-features"><i class="icon-line2-lock"></i><h5 class="font-body"><span>Serious about</span> <a href="#">Security &</a> <span></span> <a href="#">Privacy</a></h5></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End Contain-->
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" style="background-color: #FFF;">
+
+            <div class="container">
+
+                <!-- Footer Widgets
+                ============================================= -->
+                <div class="footer-widgets-wrap clearfix">
+                    <div class="row clearfix">
+
+                        <div class="col-lg-5">
+
+                            <div class="widget clearfix">
+                                <div class="row clearfix">
+                                    <div class="col-lg-8 bottommargin-sm clearfix" style="color:#888;">
+                                        <img src="~/Content/demos/app-landing/images/benemica-footer-logo.png?v001" alt="Canvas Logo" style="display: block;" class="bottommargin-sm">
+                                        <p>Benemica delivers innovative cloud-based human management solution, designed through comprehensive research of 100+ organizations across different industries.</p>
+                                        <a href="https://id.linkedin.com/in/benemica?trk=author_mini-profile_title" class="social-icon si-small si-borderless si-colored si-rounded si-linkedin">
+                                            <i class="icon-linkedin"></i>
+                                            <i class="icon-linkedin"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/benemica/?hl=en" class="social-icon si-small si-borderless si-colored si-rounded si-instagram">
+                                            <i class="icon-instagram"></i>
+                                            <i class="icon-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="row clearfix">
+
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>In News</h4>
+
+                                        <ul>
+                                            <li>Articles</li>
+                                            <li>Events</li>
+                                            <li>News</li>
+                                            <li><a href="">Visit our Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>About Us</h4>
+
+                                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
+                                            <li><a href="" data-href="#section-why-benemica">Why Benemica</a></li>
+                                            <li><a href="" data-href="#section-features">Feature</a></li>
+                                            <li><a href="" data-href="#section-pricing">Pricing</a></li>
+                                            <li>@Html.ActionLink("Our partners", "ourpartners", "partners")</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>Support</h4>
+
+                                        <ul>
+                                            <li><a href="mailto:sales@benemica.com?cc=support@bposeven.com&subject=Support Benemica - Nama Perusahaan">Email</a></li>
+                                            <li><a href="https://api.whatsapp.com/send?phone=6285891297805&text=HelloBenemica" class="classLinkWhatsapp" target="_blank">WhatsApp</a></li>
+                                            <li>Call Customer Care: <a href="tel:+622157903384" target="_blank">+62 21 579 033 84</a> ext. 115</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights" class="nobg notoppadding">
+
+                <div class="container clearfix">
+
+                    <div class="col_half">
+                        Copyrights &copy; 2020 BENEMICA<br>
+                        <div> @Html.ActionLink("Terms of Use", "termsofuse", "termsprivacy") / @Html.ActionLink("Privacy Policy", "privacypolicy", "termsprivacy")</div>
+                    </div>
+
+                </div>
+
+            </div><!-- #copyrights end -->
+
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="~/Scripts/js/jquery.js"></script>
+    <script src="~/Scripts/js/plugins.js"></script>
+
+
+    <!-- Date & Time Picker JS -->
+    <script src="~/Scripts/js/components/moment.js"></script>
+    <script src="~/Scripts/js/components/datepicker.js"></script>
+    <script src="~/Scripts/js/components/timepicker.js"></script>
+
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="~/Scripts/js/functions.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+
+            function pricingSwitcher(elementCheck, elementParent, elementPricing) {
+                elementParent.find('.pts-left,.pts-right').removeClass('pts-switch-active');
+                elementPricing.find('.pts-switch-content-left,.pts-switch-content-right').addClass('hidden');
+
+                if (elementCheck.filter(':checked').length > 0) {
+                    elementParent.find('.pts-right').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-right').removeClass('hidden');
+                } else {
+                    elementParent.find('.pts-left').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-left').removeClass('hidden');
+                }
+            }
+
+            $('.pts-switcher').each(function () {
+                var element = $(this),
+                    elementCheck = element.find(':checkbox'),
+                    elementParent = $(this).parents('.pricing-tenure-switcher'),
+                    elementPricing = $(elementParent.attr('data-container'));
+
+                pricingSwitcher(elementCheck, elementParent, elementPricing);
+
+                elementCheck.on('change', function () {
+                    pricingSwitcher(elementCheck, elementParent, elementPricing);
+                });
+            });
+
+            // Get Started From Validation
+            var getStartedForm = $('#get-started-form'),
+                getStartedFormAlert = getStartedForm.attr('data-alert-type'),
+                getStartedFormLoader = getStartedForm.attr('data-loader'),
+                getStartedFormResult = getStartedForm.find('.contact-form-result'),
+                getStartedFormRedirect = getStartedForm.attr('data-redirect');
+
+            getStartedForm.validate({
+                submitHandler: function (form) {
+
+                    getStartedFormResult.hide();
+
+                    if (getStartedFormLoader == 'button') {
+                        var defButton = $(form).find('button'),
+                            defButtonText = defButton.html();
+
+                        defButton.html('<i class="icon-line-loader icon-spin nomargin"></i>');
+                    } else {
+                        $(form).find('.form-process').fadeIn();
+                    }
+
+                    $(form).ajaxSubmit({
+                        target: getStartedFormResult,
+                        dataType: 'json',
+                        resetForm: true,
+                        success: function (data) {
+                            if (getStartedFormLoader == 'button') {
+                                defButton.html(defButtonText);
+                            } else {
+                                $(form).find('.form-process').fadeOut();
+                            }
+                            if (data.alert != 'error' && getStartedFormRedirect) {
+                                window.location.replace(getStartedFormRedirect);
+                                return true;
+                            }
+                            if (getStartedFormAlert == 'inline') {
+                                if (data.alert == 'error') {
+                                    var alertType = 'alert-danger';
+                                } else {
+                                    var alertType = 'alert-success';
+                                }
+
+                                getStartedFormResult.addClass('alert ' + alertType).html(data.message).slideDown(400);
+                            } else {
+                                getStartedFormResult.attr('data-notify-type', data.alert).attr('data-notify-msg', data.message).html('');
+                                SEMICOLON.widget.notifications(getStartedFormResult);
+                            }
+                        }
+                    });
+                }
+            });
+
+            $('[data-pricing-plan]').click(function () {
+                getStartedForm.find('#get-started-form-package').val($(this).attr('data-pricing-plan'));
+                getStartedForm.find('#modal-get-started-package').html($(this).attr('data-pricing-plan'));
+            });
+        });
+
+        $('.inputNumber').keypress(validateNumber);
+        function validateNumber(event) {
+            var key = window.event ? event.keyCode : event.which;
+            if (event.keyCode === 8 || event.keyCode === 46) {
+                return true;
+            } else if (key < 48 || key > 57) {
+                return false;
+            } else {
+                return true;
+            }
+        };
+
+        $('.datetimepicker3').datetimepicker();
+
+        $("#email").change(function () {
+            var getValue = $('#email').val();
+            validateEmail1(getValue);
+        });
+        function validateEmail1(getValue) {
+            if (getValue == "") {
+                $('#email').addClass("error");
+                $('#btnDemo').prop('disabled', true)
+                return true;
+            }
+            if (getValue != "") {
+                var reg_email = /^([A-Za-z0-9_\-\.])+\@@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                if (reg_email.test(getValue) == false) {
+                    $('#email').addClass("error");
+                    $('#btnDemo').prop('disabled', true)
+                    return false;
+                }
+                else {
+                    $('#email').removeClass("error");
+                    $('#btnDemo').prop('disabled', false)
+                    return true;
+                }
+            }
+        }
+
+        $("#contactEmail").change(function () {
+            var getData = $('#contactEmail').val();
+            validateEmail2(getData);
+        });
+
+        function validateEmail2(getData) {
+            if (getData == "") {
+                $('#contactEmail').addClass("error");
+                $('#btnContactSupport').prop('disabled', true)
+                return true;
+            }
+            if (getData != "") {
+                var reg_email = /^([A-Za-z0-9_\-\.])+\@@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                if (reg_email.test(getData) == false) {
+                    $('#contactEmail').addClass("error");
+                    $('#btnContactSupport').prop('disabled', true)
+                    return false;
+                }
+                else {
+                    $('#contactEmail').removeClass("error");
+                    $('#btnContactSupport').prop('disabled', false)
+                    return true;
+                }
+            }
+        }
+
+        var pricingSelected = "";
+        function freePricing(obj) {
+            pricingSelected = "Free Pricing";
+            return true;
+        }
+        function basicPricing(obj) {
+            pricingSelected = "Basic Pricing";
+            return true;
+        }
+        function advancePricing(obj) {
+            pricingSelected = "Advance Pricing";
+            return true;
+        }
+
+        $(".required").click(function () {
+            var getId = '#' + $(this).attr('id');
+            $(getId).removeClass("error");
+            $('#btnDemo').prop('disabled', false)
+        });
+
+        $('body').on('click', '#btnDemo', function () {
+            if ($('#companyName').val() == '') {
+                $('#companyName').addClass("error");
+                $('#btnDemo').prop('disabled', true)
+            }
+            if ($('#numberEmployee').val() == '') {
+                $('#numberEmployee').addClass("error");
+                $('#btnDemo').prop('disabled', true)
+            }
+            if ($('#contactName').val() == '') {
+                $('#contactName').addClass("error");
+                $('#btnDemo').prop('disabled', true)
+            }
+            if ($('#title').val() == '') {
+                $('#title').addClass("error");
+                $('#btnDemo').prop('disabled', true)
+            }
+            if ($('#email').val() == '') {
+                $('#email').addClass("error");
+                $('#btnDemo').prop('disabled', true)
+            }
+            if ($('#phone').val() == '') {
+                $('#phone').addClass("error");
+                $('#btnDemo').prop('disabled', true)
+            }
+            if ($('#meetingSchedule').val() == '') {
+                $('#meetingSchedule').addClass("error");
+                $('#btnDemo').prop('disabled', true)
+            }
+            if ($('#meetingLocation').val() == '') {
+                $('#meetingLocation').addClass("error");
+                $('#btnDemo').prop('disabled', true)
+            }
+            if ($('#companyName').val() != '' && $('#numberEmployee').val() != '' && $('#contactName').val() != '' && $('#title').val() != '' && $('#email').val() != '' && $('#phone').val() != '' && $('#meetingSchedule').val() != '' && $('#meetingLocation').val() != '') {
+                var returnEmail = validateEmail1($('#email').val());
+                if (returnEmail != false) {
+                    SetDataTabelDemo();
+                }
+            }
+        });
+        function SetDataTabelDemo() {
+            var datapost = $('#modal-get-started_2').serialize();
+            $.ajax({
+                method: "POST",
+                timeout: 60000,
+                url: '@Url.Action("GetListDemoTable", "Demo")',
+                dataType: 'json',
+                data: datapost,
+                cache: false,
+                context: document.body
+            }).done(function (data) {
+                if (data.errMessage == 0) {
+                    $.magnificPopup.close();
+                    $('.classGetPopUp').trigger('click');
+                }
+            });
+        }
+
+        $(".required-contact").click(function () {
+            var getId = '#' + $(this).attr('id');
+                $(getId).removeClass("error");
+                $('#btnContactSupport').prop('disabled', false)
+        });
+
+        $('body').on('click', '#btnContactSupport', function () {
+            if ($('#contactCompanyName').val() == '') {
+                $('#contactCompanyName').addClass("error");
+                $('#btnContactSupport').prop('disabled', true)
+            }
+            if ($('#contactNumberEmployee').val() == '') {
+                $('#contactNumberEmployee').addClass("error");
+                $('#btnContactSupport').prop('disabled', true)
+            }
+            if ($('#contactContactName').val() == '') {
+                $('#contactContactName').addClass("error");
+                $('#btnContactSupport').prop('disabled', true)
+            }
+            if ($('#contactTitle').val() == '') {
+                $('#contactTitle').addClass("error");
+                $('#btnContactSupport').prop('disabled', true)
+            }
+            if ($('#contactEmail').val() == '') {
+                $('#contactEmail').addClass("error");
+                $('#btnContactSupport').prop('disabled', true)
+            }
+            if ($('#contactPhone').val() == '') {
+                $('#contactPhone').addClass("error");
+                $('#btnContactSupport').prop('disabled', true)
+            }
+            if ($('#contactMessage').val() == '') {
+                $('#contactMessage').addClass("error");
+                $('#btnContactSupport').prop('disabled', true)
+            }
+            if ($('#contactCompanyName').val() != '' && $('#contactNumberEmployee').val() != '' && $('#contactContactName').val() != '' && $('#contactTitle').val() != '' && $('#contactEmail').val() != '' && $('#contactPhone').val() != '' && $('#contactMessage').val() != '') {
+                var returnEmail = validateEmail2($('#contactEmail').val());
+                if (returnEmail != false) {
+                    SetDataTabelContactSupport();
+                }
+            }
+        });
+        function SetDataTabelContactSupport() {
+            var datapost = $('#section-contact-us').serialize() + '&Pricing=' + pricingSelected;
+            $.ajax({
+                method: "POST",
+                timeout: 60000,
+                url: '@Url.Action("GetListContactSupportTable", "ContactSupport")',
+                dataType: 'json',
+                data: datapost,
+                cache: false,
+                context: document.body
+            }).done(function (data) {
+                if (data.errMessage == 0) {
+                    $('.classGetPopUp').trigger('click');
+                }
+            });
+        }
+        // Opera 8.0+
+        var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+        // Firefox 1.0+
+        var isFirefox = typeof InstallTrigger !== 'undefined';
+        // Safari 3.0+ "[object HTMLElementConstructor]"
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+        // Internet Explorer 6-11
+        var isIE = false || !!document.documentMode;
+        // Edge 20+
+        var isEdge = !isIE && !!window.StyleMedia;
+        // Chrome 1 - 71
+        var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+        // Blink engine detection
+        var isBlink = (isChrome || isOpera) && !!window.CSS;
+        // parameter screen width and height
+        if (isFirefox == true) {
+            $(".classLinkWhatsapp").attr("href", "https://web.whatsapp.com/send?phone=6285891297805&text=HelloBenemica")
+            $(".classLinkWhatsappFormat").attr("href", "https://web.whatsapp.com/send?phone=6285891297805&text=Hello%20BENEMICA,%0AName%20/%20email%20:%20%0ACompany%20Name%20:%20%0AMessage%20:%20")
+        }
+    </script>
+</body>
+</html>

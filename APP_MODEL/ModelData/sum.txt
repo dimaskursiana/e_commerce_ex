@@ -1,0 +1,36 @@
+#region Convert Sum Data Tabel
+        public static DataTable SumDataTabel(DataTable inputTabel)
+        {
+           // DataTable NewTable = new DataTable();
+            
+            //foreach (DataColumn dc in inputTabel.Columns)
+            //{
+            //    NewTable.Columns.Add(dc);
+            //}
+            
+            DataTable NewTable = inputTabel.Clone();
+            
+            var HeaderRowSysParam = 5;
+            int HeaderRow = Convert.ToInt32(HeaderRowSysParam); //Header Template
+            int HeaderFlagMandatory = Convert.ToInt32(HeaderRowSysParam) + 1; //Mandatory field && Non-Mandatory field
+            int StartRow = HeaderRow + 2; //Start Row
+
+            for (int i = StartRow; i < inputTabel.Rows.Count; i++)
+            {
+                DataRow dr = inputTabel.Rows[i];
+
+                DataRow[] drSelected = NewTable.Select("WHERE " + NewTable.Columns[0].ToString() + " = '" + dr[0].ToString() + "' AND " + NewTable.Columns[1].ToString() + " = '" + dr[1].ToString() + "' AND " + NewTable.Columns[2].ToString() + " = '" + dr[2].ToString() + "'","");
+
+                if (drSelected.Length > 0)
+                {
+                    NewTable.Rows.Add(dr);
+                }
+                else
+                {
+                    dr[4] = Convert.ToDecimal(dr[4]) + Convert.ToDecimal(drSelected[0][4]);
+                    NewTable.Rows.Add(dr);
+                }
+            }
+            return NewTable;
+        }
+        #endregion

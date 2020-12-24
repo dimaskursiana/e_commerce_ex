@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-us">
+@{
+    Layout = null;
+}
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="BENEMICA" />
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="~/Content/css/Merriweather.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/dark.css" rel="stylesheet" />
+
+    <!-- Media Agency Demo Specific Stylesheet -->
+    <link href="~/Content/demos/app-landing/app-landing.css" rel="stylesheet" />
+    <!-- / -->
+    <link href="~/Content/css/font-icons.css" rel="stylesheet" />
+    <link href="~/Content/one-page/css/et-line.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/css/magnific-popup.css" rel="stylesheet" />
+
+    <!-- Date & Time Picker CSS -->
+    <link href="~/Content/css/components/datepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/components/timepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/components/daterangepicker.css" rel="stylesheet" />
+
+    <link href="~/Content/demos/app-landing/css/fonts.css" rel="stylesheet" />
+
+    <!-- Bootstrap Switch CSS -->
+    <link href="~/Content/css/components/bs-switches.css" rel="stylesheet" />
+
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="~/Content/demos/app-landing/css/colors.css" rel="stylesheet" />
+
+    <!--New YourStyle CSS-->
+    <link href="~/Content/your_style.css?v006" rel="stylesheet" />
+
+    <!-- Document Title
+    ============================================= -->
+    <title>HR System Terbaik Indonesia</title>
+    <meta name="description" content="Benemica is the best HRIS Indonesia. As HR System Terbaik Indonesia, Benemica delivers innovative cloud-based human management solutions.">
+    <meta property="og:title" content="HR System Terbaik Indonesia" />
+    <meta property="og:url" content="https://www.benemica.com/partners/whywithus" />
+    <meta property="og:description" content="Benemica is the best HRIS Indonesia. As HR System Terbaik Indonesia, Benemica delivers innovative cloud-based human management solutions.">
+    <meta property="og:image" content="https://www.benemica.com/Content/demos/app-landing/images/logo-i-benemica.png">
+    <meta property="og:type" content="website" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Content/images/favicon/favicon.ico?v001" type="image/x-icon">
+    <link rel="icon" href="~/Content/images/favicon/favicon.ico?v001" type="image/x-icon">
+</head>
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="split-menu transparent-header sticky-header" data-sticky-class="not-dark" data-responsive-class="not-dark">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+
+                        <a href="../" class="standard-logo" data-dark-logo="../Content/demos/app-landing/images/benemica-official.png?v001"><img src="../Content/demos/app-landing/images/benemica-official.png?v001" alt="HRIS Indonesia"></a>
+                        <a href="../" class="retina-logo" data-dark-logo="../Content/demos/app-landing/images/logo-dark@2x-benemica.png?v001"><img src="../Content/demos/app-landing/images/logo@2x-benemica.png?v001" alt="HR System Indonesia"></a>
+                    </div><!-- #logo end -->
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu" class="with-arrows clearfix not-dark">
+
+                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160"></ul>
+
+                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
+
+                            <li>
+                                <a href="https://benemica.com#section-why-benemica"><div>Why Benemica</div></a>
+                            </li>
+                            <li>
+                                <a href="https://benemica.com#section-features"><div>Feature</div></a>
+                            </li>
+                            <li>
+                                <a href="https://benemica.com#section-pricing"><div>Pricing</div></a>
+                            </li>
+                            <li>
+                                <a href="#" data-href="#section-faqs"><div>Partners</div></a>
+                                <ul>
+                                    <li>@Html.ActionLink("Why with us?", "whywithus", "partners")</li>
+                                    <li>@Html.ActionLink("Become a partner", "becomeapartner", "partners")</li>
+                                    <li>@Html.ActionLink("Our partners", "ourpartners", "partners")</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" data-href="#section-nextgen"><div>More Resource</div></a>
+                                <ul>
+                                    <li><a href="#" data-href="#section-nextgen"><div>Blog</div></a></li>
+                                    <li>@Html.ActionLink("FAQ", "faq", "moreresource")</li>
+                                    <li>@Html.ActionLink("Help", "help", "moreresource")</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </nav><!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+        <!--Contain-->
+        <section id="content">
+
+            <div class="content-wrapHeaderPage">
+                @using (Html.BeginForm("WhyWithUs", "Partners", FormMethod.Post, new { id = "section-Partner-Wwu" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="container clearfix">
+                        <div class="page-section nopadding nomargin">
+                            <h1 align="center"><a href="https://benemica.com/partners/whywithus">HR System Terbaik Indonesia</a> | HRIS Indonesia</h1>
+                             <h2>
+                                <center>"The Best HRIS Indonesia"</center> <br />
+                            </h2>                         
+                            <h2 align="center">Why with us</h2>
+                            <div class="clearfix">
+                                <div class="col-lg-8 offset-lg-2 col-md-6 bottommargin-sm" align="center">
+                                    <h4>
+                                        As a <a href="https://benemica.com/">Software Payroll Indonesia</a> , Benemica delivers innovative cloud-based human management solutions used by organizations in various industry across Indonesia to manage, engage, develop, and grow their employee and increase agility on their payroll process. <br /><br />Our Partner Program provides an opportunity for companies to join our partner ecosystem and extend their offerings as well as ours, increase user adoption, impact customer satisfaction, and optimize sales. <br /><br />Together, we can bring real value to the organizations with our solutions.
+                                    </h4>
+
+                                    <div class="col-lg-4 col-md-6 bottommargin-sm" align="center">
+                                        <button type="button" onclick='window.location = "@Url.Action("becomeapartner", "partners")";' class="btn btn-primary btn-lg btn-block" style="border-radius: 23px; font-size:16px"><b>Become a Partner</b></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+        <!--End Contain-->
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" style="background-color: #FFF;">
+
+            <div class="container">
+
+                <!-- Footer Widgets
+                ============================================= -->
+                <div class="footer-widgets-wrap clearfix">
+                    <div class="row clearfix">
+
+                        <div class="col-lg-5">
+
+                            <div class="widget clearfix">
+                                <div class="row clearfix">
+                                    <div class="col-lg-8 bottommargin-sm clearfix" style="color:#888;">
+                                        <img src="~/Content/demos/app-landing/images/benemica-footer-logo.png?v001" alt="Canvas Logo" style="display: block;" class="bottommargin-sm">
+                                        <p>Benemica delivers innovative cloud-based human management solution, designed through comprehensive research of 100+ organizations across different industries.</p>
+                                        <a href="https://id.linkedin.com/in/benemica?trk=author_mini-profile_title" class="social-icon si-small si-borderless si-colored si-rounded si-linkedin">
+                                            <i class="icon-linkedin"></i>
+                                            <i class="icon-linkedin"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/benemica/?hl=en" class="social-icon si-small si-borderless si-colored si-rounded si-instagram">
+                                            <i class="icon-instagram"></i>
+                                            <i class="icon-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="row clearfix">
+
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>In News</h4>
+
+                                        <ul>
+                                            <li>Articles</li>
+                                            <li>Events</li>
+                                            <li>News</li>
+                                            <li><a href="">Visit our Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>About Us</h4>
+
+                                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
+                                            <li><a href="https://benemica.com#section-why-benemica">Why Benemica</a></li>
+                                            <li><a href="https://benemica.com#section-features">Feature</a></li>
+                                            <li><a href="https://benemica.com#section-pricing">Pricing</a></li>
+                                            <li>@Html.ActionLink("Our partners", "ourpartners", "partners")</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>Support</h4>
+
+                                        <ul>
+                                            <li><a href="mailto:sales@benemica.com?cc=support@bposeven.com&subject=Support Benemica - Nama Perusahaan">Email</a></li>
+                                            <li><a href="https://api.whatsapp.com/send?phone=6285891297805&text=HelloBenemica" class="classLinkWhatsapp" target="_blank">WhatsApp</a></li>
+                                            <li>Call Customer Care: <a href="tel:+622157903384" target="_blank">+62 21 579 033 84</a> ext. 115</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights" class="nobg notoppadding">
+
+                <div class="container clearfix">
+
+                    <div class="col_half">
+                        Copyrights &copy; 2020 BENEMICA<br>
+                        <div> @Html.ActionLink("Terms of Use", "termsofuse", "termsprivacy") / @Html.ActionLink("Privacy Policy", "privacypolicy", "termsprivacy")</div>
+                    </div>
+
+                </div>
+
+            </div><!-- #copyrights end -->
+
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="~/Scripts/js/jquery.js"></script>
+    <script src="~/Scripts/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="~/Scripts/js/functions.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+
+            function pricingSwitcher(elementCheck, elementParent, elementPricing) {
+                elementParent.find('.pts-left,.pts-right').removeClass('pts-switch-active');
+                elementPricing.find('.pts-switch-content-left,.pts-switch-content-right').addClass('hidden');
+
+                if (elementCheck.filter(':checked').length > 0) {
+                    elementParent.find('.pts-right').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-right').removeClass('hidden');
+                } else {
+                    elementParent.find('.pts-left').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-left').removeClass('hidden');
+                }
+            }
+
+            $('.pts-switcher').each(function () {
+                var element = $(this),
+                    elementCheck = element.find(':checkbox'),
+                    elementParent = $(this).parents('.pricing-tenure-switcher'),
+                    elementPricing = $(elementParent.attr('data-container'));
+
+                pricingSwitcher(elementCheck, elementParent, elementPricing);
+
+                elementCheck.on('change', function () {
+                    pricingSwitcher(elementCheck, elementParent, elementPricing);
+                });
+            });
+
+            // Get Started From Validation
+            var getStartedForm = $('#get-started-form'),
+                getStartedFormAlert = getStartedForm.attr('data-alert-type'),
+                getStartedFormLoader = getStartedForm.attr('data-loader'),
+                getStartedFormResult = getStartedForm.find('.contact-form-result'),
+                getStartedFormRedirect = getStartedForm.attr('data-redirect');
+
+            getStartedForm.validate({
+                submitHandler: function (form) {
+
+                    getStartedFormResult.hide();
+
+                    if (getStartedFormLoader == 'button') {
+                        var defButton = $(form).find('button'),
+                            defButtonText = defButton.html();
+
+                        defButton.html('<i class="icon-line-loader icon-spin nomargin"></i>');
+                    } else {
+                        $(form).find('.form-process').fadeIn();
+                    }
+
+                    $(form).ajaxSubmit({
+                        target: getStartedFormResult,
+                        dataType: 'json',
+                        resetForm: true,
+                        success: function (data) {
+                            if (getStartedFormLoader == 'button') {
+                                defButton.html(defButtonText);
+                            } else {
+                                $(form).find('.form-process').fadeOut();
+                            }
+                            if (data.alert != 'error' && getStartedFormRedirect) {
+                                window.location.replace(getStartedFormRedirect);
+                                return true;
+                            }
+                            if (getStartedFormAlert == 'inline') {
+                                if (data.alert == 'error') {
+                                    var alertType = 'alert-danger';
+                                } else {
+                                    var alertType = 'alert-success';
+                                }
+
+                                getStartedFormResult.addClass('alert ' + alertType).html(data.message).slideDown(400);
+                            } else {
+                                getStartedFormResult.attr('data-notify-type', data.alert).attr('data-notify-msg', data.message).html('');
+                                SEMICOLON.widget.notifications(getStartedFormResult);
+                            }
+                        }
+                    });
+                }
+            });
+
+            $('[data-pricing-plan]').click(function () {
+                getStartedForm.find('#get-started-form-package').val($(this).attr('data-pricing-plan'));
+                getStartedForm.find('#modal-get-started-package').html($(this).attr('data-pricing-plan'));
+            });
+
+            // Opera 8.0+
+            var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+            // Firefox 1.0+
+            var isFirefox = typeof InstallTrigger !== 'undefined';
+            // Safari 3.0+ "[object HTMLElementConstructor]"
+            var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+            // Internet Explorer 6-11
+            var isIE = false || !!document.documentMode;
+            // Edge 20+
+            var isEdge = !isIE && !!window.StyleMedia;
+            // Chrome 1 - 71
+            var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+            // Blink engine detection
+            var isBlink = (isChrome || isOpera) && !!window.CSS;
+            // parameter screen width and height
+            if (isFirefox == true) {
+                $(".classLinkWhatsapp").attr("href", "https://web.whatsapp.com/send?phone=6285891297805&text=HelloBenemica")
+            }
+        });
+    </script>
+</body>
+
+</html>

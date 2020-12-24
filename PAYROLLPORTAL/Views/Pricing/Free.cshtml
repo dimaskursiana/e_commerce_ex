@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-us">
+@model APP_MODEL.ModelData.Global_Customer_Notice
+@using APP_COMMON;
+@{
+    Layout = null;
+}
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="BENEMICA" />
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="~/Content/css/Merriweather.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/dark.css" rel="stylesheet" />
+
+    <!-- Media Agency Demo Specific Stylesheet -->
+    <link href="~/Content/demos/app-landing/app-landing.css" rel="stylesheet" />
+    <!-- / -->
+    <link href="~/Content/css/font-icons.css" rel="stylesheet" />
+    <link href="~/Content/one-page/css/et-line.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/css/magnific-popup.css" rel="stylesheet" />
+
+    <!-- Date & Time Picker CSS -->
+    <link href="~/Content/css/components/datepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/components/timepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/components/daterangepicker.css" rel="stylesheet" />
+
+    <link href="~/Content/demos/app-landing/css/fonts.css" rel="stylesheet" />
+
+    <!-- Bootstrap Switch CSS -->
+    <link href="~/Content/css/components/bs-switches.css" rel="stylesheet" />
+
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="~/Content/demos/app-landing/css/colors.css" rel="stylesheet" />
+
+    <!--New YourStyle CSS-->
+    <link href="~/Content/your_style.css?v006" rel="stylesheet" />
+
+    <!-- Document Title
+    ============================================= -->
+    <title>Free Package | BENEMICA</title>
+    <meta name="description" content="Free Package Benemica">
+    <meta property="og:title" content="Free Package | BENEMICA" />
+    <meta property="og:url" content="https://www.benemica.com/pricing/free" />
+    <meta property="og:description" content="Free Package Benemica">
+    <meta property="og:image" content="https://www.benemica.com/Content/demos/app-landing/images/logo-i-benemica.png">
+    <meta property="og:type" content="website" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/Content/images/favicon/favicon.ico?v001" type="image/x-icon">
+    <link rel="icon" href="~/Content/images/favicon/favicon.ico?v001" type="image/x-icon">
+</head>
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="split-menu transparent-header sticky-header" data-sticky-class="not-dark" data-responsive-class="not-dark">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+
+                        <a href="../" class="standard-logo" data-dark-logo="../Content/demos/app-landing/images/benemica-official.png?v001"><img src="../Content/demos/app-landing/images/benemica-official.png?v001" alt="Canvas Logo"></a>
+                        <a href="../" class="retina-logo" data-dark-logo="../Content/demos/app-landing/images/logo-dark@2x-benemica.png?v001"><img src="../Content/demos/app-landing/images/logo@2x-benemica.png?v001" alt="Canvas Logo"></a>
+                    </div><!-- #logo end -->
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu" class="with-arrows clearfix not-dark">
+
+                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160"></ul>
+
+                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
+
+                            <li>
+                                <a href="https://benemica.com#section-why-benemica"><div>Why Benemica</div></a>
+                            </li>
+                            <li>
+                                <a href="https://benemica.com#section-features"><div>Feature</div></a>
+                            </li>
+                            <li>
+                                <a href="https://benemica.com#section-pricing"><div>Pricing</div></a>
+                            </li>
+                            <li>
+                                <a href="#" data-href="#section-faqs"><div>Partners</div></a>
+                                <ul>
+                                    <li>@Html.ActionLink("Why with us?", "whywithus", "partners")</li>
+                                    <li>@Html.ActionLink("Become a partner", "becomeapartner", "partners")</li>
+                                    <li>@Html.ActionLink("Our partners", "ourpartners", "partners")</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" data-href="#section-nextgen"><div>More Resource</div></a>
+                                <ul>
+                                    <li><a href="#" data-href="#section-nextgen"><div>Blog</div></a></li>
+                                    <li>@Html.ActionLink("FAQ", "faq", "moreresource")</li>
+                                    <li>@Html.ActionLink("Help", "help", "moreresource")</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </nav><!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+        <!--Contain-->
+        <section id="content">
+            <div class="content-wrapHeaderPage">
+                @using (Html.BeginForm("Free", "Pricing", FormMethod.Post, new { id = "section-pricing-free" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="container clearfix">
+
+
+                        <div class="page-section nopadding nomargin">
+                            <h2 align="center">Request a Quote</h2>
+                            <div class="clearfix">
+                                <div class="col-lg-10 offset-lg-1 col-md-6 bottommargin-sm" align="center">
+                                    <h4>Free Package</h4>
+                                    <h5>
+                                        Thank you for your interest in Benemica HMS, kindly input the required information and we will get back to you soon with the best offer.
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="row topmargin-sm clearfix">
+                                <div class="col-lg-6 offset-lg-3 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Company Name*</h4>
+                                    @Html.TextBoxFor(model => model.Company_Name, new { @class = "form-control required no-error-msg", id = "companyName", required = "required", placeholder = "Your company name, website (if any)", maxlength = "75" })
+                                </div>
+
+                                <div class="col-lg-6 offset-lg-3 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Number Of Employees*</h4>
+                                    @Html.TextBoxFor(model => model.Number_Employee, new { @class = "form-control required no-error-msg inputNumber", id = "numberEmployee", required = "required", placeholder = "e.g. 100", maxlength = "7" })
+                                </div>
+
+                                <div class="col-lg-6 offset-lg-3 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Contact Name*</h4>
+                                    @Html.TextBoxFor(model => model.Contact_Name, new { @class = "form-control required no-error-msg", id = "contactName", required = "required", placeholder = "Your name", maxlength = "75" })
+                                </div>
+
+                                <div class="col-lg-6 offset-lg-3 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Title*</h4>
+                                    @Html.TextBoxFor(model => model.Title, new { @class = "form-control required no-error-msg", id = "title", required = "required", placeholder = "Your role or position", maxlength = "75" })
+                                </div>
+
+                                <div class="col-lg-6 offset-lg-3 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Email*</h4>
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control required no-error-msg", id = "email", required = "required", placeholder = "Your email", maxlength = "75" })
+                                </div>
+
+                                <div class="col-lg-6 offset-lg-3 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body" style="margin-bottom:15px;">Phone*</h4>
+                                    @Html.TextBoxFor(model => model.Phone, new { @class = "form-control required no-error-msg inputNumber", id = "phone", required = "required", placeholder = "Your mobile or office phone number", maxlength = "15" })
+                                </div>
+
+                                <div class="col-lg-6 offset-lg-3 col-md-6 bottommargin-sm">
+                                    <h4 class="font-body">Message*</h4>
+                                    @Html.TextAreaFor(model => model.Message, new { @class = "form-control required no-error-msg", rows = "6", cols = "25", id = "message", maxlength = "255", placeholder = "Your Message (Max 255 character)" })
+                                </div>
+
+                                <div class="col-lg-2 offset-lg-5 col-md-6 bottommargin-sm" align="center">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block" id="btnFreePricing" style="border-radius: 23px; font-size:16px" Disabled="Disabled"><b>Submit</b></button>
+                                    @*<a href="https://api.whatsapp.com/send?phone=6285891297805&text=HelloBenemica" class="pts-switch-content-left button button-large button-white button-light capitalize classLinkWhatsapp" style="border-radius: 23px;" target="_blank"><img src="~/Content/images/icons8-whatsapp-48.png">Chat Now</a>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                <!-- Modal_1 -->
+                <a href="#myModal1PopUp" data-lightbox="inline" class="classGetPopUp"></a>
+                <div class="modal1 mfp-hide" id="myModal1PopUp">
+                    <div class="block divcenter" style="background-color: #FFF; max-width: 500px;">
+                        <div class="feature-box fbox-center fbox-effect nobottomborder nobottommargin" style="padding: 40px;">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-email2 i-alt"></i></a>
+                            </div>
+                            <h3>Email<span class="subtitle">Send Email Successfull</span></h3>
+                        </div>
+                        <div class="section center nomargin" style="padding: 30px;">
+                            <a href="../" class="button">Home Page</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="section notopmargin footer-stick" style="padding: 10px 0; background-color: #F8FAFB; border-top: 1px solid #E5E5E5;">
+                    <div class="container clearfix">
+
+                        <div class="row clearfix">
+                            <div class="col-lg-4">
+                                <div class="app-footer-features"><i class="icon-line2-globe-alt"></i><h5 class="font-body"><a href="#">Free Taining</a><span> &amp; 24-hour coverage</span></h5></div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="app-footer-features"><i class="icon-line2-notebook"></i><h5 class="font-body"><a href="#">99.99% Uptime</a><span> the last 12 months</span></h5></div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="app-footer-features"><i class="icon-line2-lock"></i><h5 class="font-body"><span>Serious about</span> <a href="#">Security</a> <span>&amp;</span> <a href="#">Privacy</a></h5></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End Contain-->
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" style="background-color: #FFF;">
+
+            <div class="container">
+
+                <!-- Footer Widgets
+                ============================================= -->
+                <div class="footer-widgets-wrap clearfix">
+                    <div class="row clearfix">
+
+                        <div class="col-lg-5">
+
+                            <div class="widget clearfix">
+                                <div class="row clearfix">
+                                    <div class="col-lg-8 bottommargin-sm clearfix" style="color:#888;">
+                                        <img src="~/Content/demos/app-landing/images/benemica-footer-logo.png?v001" alt="Canvas Logo" style="display: block;" class="bottommargin-sm">
+                                        <p>Benemica delivers innovative cloud-based human management solution, designed through comprehensive research of 100+ organizations across different industries.</p>
+                                        <a href="https://id.linkedin.com/in/benemica?trk=author_mini-profile_title" class="social-icon si-small si-borderless si-colored si-rounded si-linkedin">
+                                            <i class="icon-linkedin"></i>
+                                            <i class="icon-linkedin"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/benemica/?hl=en" class="social-icon si-small si-borderless si-colored si-rounded si-instagram">
+                                            <i class="icon-instagram"></i>
+                                            <i class="icon-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="row clearfix">
+
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>In News</h4>
+
+                                        <ul>
+                                            <li>Articles</li>
+                                            <li>Events</li>
+                                            <li>News</li>
+                                            <li><a href="">Visit our Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>About Us</h4>
+
+                                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
+                                            <li><a href="https://benemica.com#section-why-benemica">Why Benemica</a></li>
+                                            <li><a href="https://benemica.com#section-features">Feature</a></li>
+                                            <li><a href="https://benemica.com#section-pricing">Pricing</a></li>
+                                            <li>@Html.ActionLink("Our partners", "ourpartners", "partners")</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bottommargin-sm">
+                                    <div class="widget widget_links app_landing_widget_link clearfix">
+                                        <h4>Support</h4>
+
+                                        <ul>
+                                            <li><a href="mailto:sales@benemica.com?cc=support@bposeven.com&subject=Support Benemica - Nama Perusahaan">Email</a></li>
+                                            <li><a href="https://api.whatsapp.com/send?phone=6285891297805&text=HelloBenemica" class="classLinkWhatsapp" target="_blank">WhatsApp</a></li>
+                                            <li>Call Customer Care: <a href="tel:+622157903384" target="_blank">+62 21 579 033 84</a> ext. 115</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights" class="nobg notoppadding">
+
+                <div class="container clearfix">
+
+                    <div class="col_half">
+                        Copyrights &copy; 2020 BENEMICA<br>
+                        <div> @Html.ActionLink("Terms of Use", "termsofuse", "termsprivacy") / @Html.ActionLink("Privacy Policy", "privacypolicy", "termsprivacy")</div>
+                    </div>
+
+                </div>
+
+            </div><!-- #copyrights end -->
+
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script src="~/Scripts/js/jquery.js"></script>
+    <script src="~/Scripts/js/plugins.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="~/Scripts/js/functions.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+
+            function pricingSwitcher(elementCheck, elementParent, elementPricing) {
+                elementParent.find('.pts-left,.pts-right').removeClass('pts-switch-active');
+                elementPricing.find('.pts-switch-content-left,.pts-switch-content-right').addClass('hidden');
+
+                if (elementCheck.filter(':checked').length > 0) {
+                    elementParent.find('.pts-right').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-right').removeClass('hidden');
+                } else {
+                    elementParent.find('.pts-left').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-left').removeClass('hidden');
+                }
+            }
+
+            $('.pts-switcher').each(function () {
+                var element = $(this),
+                    elementCheck = element.find(':checkbox'),
+                    elementParent = $(this).parents('.pricing-tenure-switcher'),
+                    elementPricing = $(elementParent.attr('data-container'));
+
+                pricingSwitcher(elementCheck, elementParent, elementPricing);
+
+                elementCheck.on('change', function () {
+                    pricingSwitcher(elementCheck, elementParent, elementPricing);
+                });
+            });
+
+            // Get Started From Validation
+            var getStartedForm = $('#get-started-form'),
+                getStartedFormAlert = getStartedForm.attr('data-alert-type'),
+                getStartedFormLoader = getStartedForm.attr('data-loader'),
+                getStartedFormResult = getStartedForm.find('.contact-form-result'),
+                getStartedFormRedirect = getStartedForm.attr('data-redirect');
+
+            getStartedForm.validate({
+                submitHandler: function (form) {
+
+                    getStartedFormResult.hide();
+
+                    if (getStartedFormLoader == 'button') {
+                        var defButton = $(form).find('button'),
+                            defButtonText = defButton.html();
+
+                        defButton.html('<i class="icon-line-loader icon-spin nomargin"></i>');
+                    } else {
+                        $(form).find('.form-process').fadeIn();
+                    }
+
+                    $(form).ajaxSubmit({
+                        target: getStartedFormResult,
+                        dataType: 'json',
+                        resetForm: true,
+                        success: function (data) {
+                            if (getStartedFormLoader == 'button') {
+                                defButton.html(defButtonText);
+                            } else {
+                                $(form).find('.form-process').fadeOut();
+                            }
+                            if (data.alert != 'error' && getStartedFormRedirect) {
+                                window.location.replace(getStartedFormRedirect);
+                                return true;
+                            }
+                            if (getStartedFormAlert == 'inline') {
+                                if (data.alert == 'error') {
+                                    var alertType = 'alert-danger';
+                                } else {
+                                    var alertType = 'alert-success';
+                                }
+
+                                getStartedFormResult.addClass('alert ' + alertType).html(data.message).slideDown(400);
+                            } else {
+                                getStartedFormResult.attr('data-notify-type', data.alert).attr('data-notify-msg', data.message).html('');
+                                SEMICOLON.widget.notifications(getStartedFormResult);
+                            }
+                        }
+                    });
+                }
+            });
+
+            $('[data-pricing-plan]').click(function () {
+                getStartedForm.find('#get-started-form-package').val($(this).attr('data-pricing-plan'));
+                getStartedForm.find('#modal-get-started-package').html($(this).attr('data-pricing-plan'));
+            });
+        });
+
+            $('.inputNumber').keypress(validateNumber);
+    function validateNumber(event) {
+        var key = window.event ? event.keyCode : event.which;
+        if (event.keyCode === 8 || event.keyCode === 46) {
+            return true;
+        } else if (key < 48 || key > 57) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+
+    $("#email").change(function () {
+        var getValue = $('#email').val();
+        validateEmail1(getValue);
+    });
+    function validateEmail1(getValue) {
+        if (getValue == "") {
+            $('#email').addClass("error");
+            $('#btnFreePricing').prop('disabled', true)
+            return true;
+        }
+        if (getValue != "") {
+            var reg_email = /^([A-Za-z0-9_\-\.])+\@@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            if (reg_email.test(getValue) == false) {
+                $('#email').addClass("error");
+                $('#btnFreePricing').prop('disabled', true)
+                return false;
+            }
+            else {
+                $('#email').removeClass("error");
+                $('#btnFreePricing').prop('disabled', false)
+                return true;
+            }
+        }
+    }
+
+           $(".required").click(function () {
+            var getId = '#' + $(this).attr('id');
+            $(getId).removeClass("error");
+            $('#btnFreePricing').prop('disabled', false)
+        });
+
+           $('body').on('click', '#btnFreePricing', function () {
+            if ($('#companyName').val() == '') {
+                $('#companyName').addClass("error");
+                $('#btnFreePricing').prop('disabled', true)
+            }
+            if ($('#numberEmployee').val() == '') {
+                $('#numberEmployee').addClass("error");
+                $('#btnFreePricing').prop('disabled', true)
+            }
+            if ($('#contactName').val() == '') {
+                $('#contactName').addClass("error");
+                $('#btnFreePricing').prop('disabled', true)
+            }
+            if ($('#title').val() == '') {
+                $('#title').addClass("error");
+                $('#btnFreePricing').prop('disabled', true)
+            }
+            if ($('#email').val() == '') {
+                $('#email').addClass("error");
+                $('#btnFreePricing').prop('disabled', true)
+            }
+            if ($('#phone').val() == '') {
+                $('#phone').addClass("error");
+                $('#btnFreePricing').prop('disabled', true)
+            }
+            if ($('#message').val() == '') {
+                $('#message').addClass("error");
+                $('#btnFreePricing').prop('disabled', true)
+            }
+            if ($('#companyName').val() != '' && $('#numberEmployee').val() != '' && $('#contactName').val() != '' && $('#title').val() != '' && $('#email').val() != '' && $('#phone').val() != '' && $('#message').val() != '') {
+                var returnEmail = validateEmail1($('#email').val());
+                if (returnEmail != false) {
+                    SetDataTabelFree();
+                }
+            }
+        });
+           function SetDataTabelFree() {
+            var datapost = $('#section-pricing-free').serialize();
+            $.ajax({
+                method: "POST",
+                timeout: 60000,
+                url: '@Url.Action("Free", "Pricing")',
+                dataType: 'json',
+                data: datapost,
+                cache: false,
+                context: document.body
+            }).done(function (data) {
+                if (data.errMessage == 0) {
+                    $.magnificPopup.close();
+                    $('.classGetPopUp').trigger('click');
+                }
+            });
+        }
+           // Opera 8.0+
+           var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+           // Firefox 1.0+
+           var isFirefox = typeof InstallTrigger !== 'undefined';
+           // Safari 3.0+ "[object HTMLElementConstructor]"
+           var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+           // Internet Explorer 6-11
+           var isIE = false || !!document.documentMode;
+           // Edge 20+
+           var isEdge = !isIE && !!window.StyleMedia;
+           // Chrome 1 - 71
+           var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+           // Blink engine detection
+           var isBlink = (isChrome || isOpera) && !!window.CSS;
+           // parameter screen width and height
+           if (isFirefox == true) {
+               $(".classLinkWhatsapp").attr("href", "https://web.whatsapp.com/send?phone=6285891297805&text=HelloBenemica")
+           }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Benemica</title>
+    <meta name="title" content="BENEMICA">
+    <meta name="keywords" content="payroll, Payroll, PAYROLL, benemica, Benemica, BENEMICA">
+    <meta name="description" content="Most comprehensive and complete Payroll Cloud-based Platform! BENEMICA provide most complete services from salary calculation, tax income, BPJS, Compensation and Benefit for Staff/ Agent/ Sales, Loan, Bank File Upload, Reports, e-recruitment and many more advance features (e.g. e-Payslip, e-Leave).">
+    <meta name="image" content="~/Content/img/logo/logo.png?v001">
+    <meta name="url" content="https://benemica.com">
+    <meta name="author" content="Copyright © 2018 - BENEMICA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- #CSS FROM WEB-->
+    <link href="~/Content/css/smartadmin-production.min.css" rel="stylesheet" />
+
+    <!-- #Bootstrap Core CSS -->
+    <link type="text/css" href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
+    @*New Slider SSS*@
+    <link href="~/Content/FeaturesSlider/style.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124277777-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124277777-1');
+    </script>
+
+    <!-- #SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/extralayers.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/settings.css" media="screen">
+
+    <!-- #RELATED CSS -->
+    <link type="text/css" href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="~/Content/css/nivo-lightbox.css" rel="stylesheet">
+    <link type="text/css" href="~/Content/css/nivo-lightbox-theme/default/default.css" rel="stylesheet">
+    <link type="text/css" href="~/Content/css/animate.css" rel="stylesheet">
+
+    <!-- #SMARTADMIN LANDING CSS -->
+    <link type="text/css" href="~/Content/css/main.css" rel="stylesheet">
+    <link type="text/css" href="~/Content/color/default.css" rel="stylesheet">
+
+    <!-- #FAVICONS -->
+    <link rel="shortcut icon" href="~/Content/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Content/img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- #GOOGLE FONT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+
+    <!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+    <link href="~/Content/css/smartadmin-production-plugins.min.css" rel="stylesheet" />
+    <link href="~/Content/css/smartadmin-production.min.css" rel="stylesheet" />
+    <link href="~/Content/css/smartadmin-skins.min.css" rel="stylesheet" />
+
+    @*New YourStyle CSS*@
+    <link href="~/Content/css/your_style.css?v055" rel="stylesheet" />
+
+</head>
+<body data-spy="scroll">
+    <div class="container">
+        <!-- Section: #MENU -->
+        <ul id="gn-menu" class="gn-menu-main">
+            <li class="gn-trigger">
+                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                <nav class="gn-menu-wrapper">
+                    <div class="gn-scroller">
+                        <ul class="gn-menu">
+                            <li>
+                                <a href="" class="gn-icon gn-icon-earth">Home</a>
+                            </li>
+                            <li class="hideMenuClick">
+                                <a href="#features" class="gn-icon gn-icon-article">Features</a>
+                            </li>
+                            <li class="hideMenuClick">
+                                <a href="#pricing" class="gn-icon gn-icon-download">Pricing</a>
+                            </li>
+                            <li class="hideMenuClick">
+                                <a href="#requesttrial" class="gn-icon gn-icon-archive">Register for Trial</a>
+                            </li>
+                            <li class="hideMenuClick">
+                                <a href="#services" class="gn-icon gn-icon-cog">Support and Services</a>
+                            </li>
+                            <li class="hideMenuClick">
+                                @Html.ActionLink("Blog", "index", "blog", null, new { @class = "gn-icon gn-icon-article", @target = "_blank" })
+                            </li>
+                            <li class="hideMenuClick">
+                                @Html.ActionLink("Order", "index", "orderpayment", null, new { @class = "gn-icon gn-icon-article" })
+                            </li>
+                            <li class="hideMenuClick">
+                                <a href="#contactsupports" class="gn-icon gn-icon-help">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div><!-- /gn-scroller -->
+                </nav>
+            </li>
+            <li class="hidden-xs">
+                <a href=""><img src="~/Content/img/logo/logo.png?v001" alt="logo" style="width: 135px; margin-top: -4px;" /></a>
+            </li>
+            <li>
+                <ul class="company-social">
+                    <li class="social-google">
+                        <a href="#requesttrial" class="scrollingLink" style="margin-right: 5px;"><b><font size="2" face="Arial" color="#ffffff">TRY FOR FREE</font></b></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Section: #MENU -->
+    </div>
+
+    @RenderBody()
+
+    <!-- #FOOTER -->
+    <footer>
+        <div class="footer-content clearfix">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 col-lg-2">
+                        <a href="#" class="footer-logo"></a>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href=""><img src="~/Content/img/logo/logo_no_background.png?v001" alt="logo" style="width: 135px;" /></a>
+                        <a href="https://www.facebook.com/benemica/" target="_blank"><img src="~/Content/img/sosial/Asset 7.png?v001" style="width: 30px;height: 30px;margin-bottom: 3px;" /></a>
+                        <a href="https://www.instagram.com/benemica/" target="_blank"><img src="~/Content/img/sosial/Asset 2.png?v001" style="width: 30px;height: 30px;margin-bottom: 3px;" /></a>
+                        <a href="https://www.linkedin.com/in/benemica/" target="_blank"><img src="~/Content/img/sosial/Asset 5.png?v001" style="width: 30px;height: 30px;margin-bottom: 3px;" /></a>
+                        <br />
+                        <br />
+                        <div>
+                            <h3>
+                                <p><a href="https://benemica.com" class="scrollingLink" style="color:white">Home</a></p>
+                                <p><a href="#features" class="scrollingLink" style="color:white">Features</a> <br /></p>
+                                <p><a href="#pricing" class="scrollingLink" style="color:white">Pricing</a></p>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+                        <a href="#" class="footer-logo scrollingLink"><br /></a>
+                        <div>
+                            <h3>
+                                <p><a href="#requesttrial" class="scrollingLink" style="color:white">Register for Trial</a> <br /></p>
+                                <p><a href="#services" class="scrollingLink" style="color:white">Support and Services</a></p>
+                                <p><a href="#contactsupports" class="scrollingLink" style="color:white">Contact and Support</a></p>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @{ Html.RenderAction("_Index", "Chat"); }
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <p>
+                            Copyright © 2018 - BENEMICA
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- #FOOTER -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script>
+        if (!window.jQuery) {
+            document.write('<script src="~/Scripts/libs/jquery-2.0.2.min.js"><\/script>');
+        }
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script>
+        if (!window.jQuery.ui) {
+            document.write('<script src="~/Scripts/libs/jquery-ui-1.10.3.min.js"><\/script>');
+        }
+    </script>
+    <!-- BOOTSTRAP JS -->
+    <script src="~/Scripts/bootstrap/bootstrap.min.js"></script>
+    <!--# JS PLUGINS -->
+    <script src="~/Scripts/plugins/classie.js"></script>
+    <script src="~/Scripts/plugins/gnmenu.js?006"></script>
+    <script src="~/Scripts/plugins/jquery.scrollUp.js"></script>
+    <script src="~/Scripts/plugins/nivo-lightbox.min.js"></script>
+    <script src="~/Scripts/plugins/smoothscroll.js"></script>
+    <script src="~/Scripts/plugins/jquery.themepunch.plugins.min.js"></script>
+    <script src="~/Scripts/plugins/jquery.themepunch.revolution.min.js"></script>
+    <!-- # Custom Theme JavaScript -->
+    <script src="~/Scripts/custom.js"></script>
+    <!-- SmartChat UI : plugin -->
+    <script src="~/Scripts/smart-chat-ui/smart.chat.ui.min.js"></script>
+    <script src="~/Scripts/smart-chat-ui/smart.chat.manager.min.js"></script>
+    <!-- # Global JS-->
+    <script src="~/Scripts/GlobalJS.js?002"></script>
+    <script src="~/Scripts/Chat.js?v053"></script>
+
+    <!-- IMPORTANT: APP CONFIG -->
+    <script src="~/Scripts/app.config.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="~/Scripts/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JQUERY VALIDATE -->
+    <script src="~/Scripts/plugins/jquery-validate/jquery.validate.min.js"></script>
+
+    <!-- FastClick: For mobile devices -->
+    <script src="~/Scripts/plugins/fastclick/fastclick.min.js"></script>
+
+    <!-- MAIN APP JS FILE -->
+    <script src="~/Scripts/app.min.js"></script>
+
+    <!-- PAGE RELATED PLUGIN(S) -->
+    <script src="~/Scripts/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <script src="~/Scripts/plugins/fuelux/wizard/wizard.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('.tp-banner').show().revolution({
+                dottedOverlay: "none",
+                delay: 8000,
+                startwidth: 1170,
+                startheight: 700,
+                hideThumbs: 200,
+
+                thumbWidth: 100,
+                thumbHeight: 50,
+                thumbAmount: 5,
+
+                navigationType: "bullet",
+                navigationArrows: "solo",
+                navigationStyle: "preview4",
+
+                touchenabled: "on",
+                onHoverStop: "off",
+
+                swipe_velocity: 0.7,
+                swipe_min_touches: 1,
+                swipe_max_touches: 1,
+                drag_block_vertical: false,
+
+                parallax: "mouse",
+                parallaxBgFreeze: "on",
+                parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+
+                keyboardNavigation: "off",
+
+                navigationHAlign: "center",
+                navigationVAlign: "bottom",
+                navigationHOffset: 0,
+                navigationVOffset: 20,
+
+                soloArrowLeftHalign: "left",
+                soloArrowLeftValign: "center",
+                soloArrowLeftHOffset: 20,
+                soloArrowLeftVOffset: 0,
+
+                soloArrowRightHalign: "right",
+                soloArrowRightValign: "center",
+                soloArrowRightHOffset: 20,
+                soloArrowRightVOffset: 0,
+
+                shadow: 0,
+                fullWidth: "off",
+                fullScreen: "on",
+
+                spinner: "spinner4",
+
+                stopLoop: "off",
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+
+                shuffle: "off",
+
+                autoHeight: "off",
+                forceFullWidth: "off",
+
+                hideThumbsOnMobile: "off",
+                hideNavDelayOnMobile: 1500,
+                hideBulletsOnMobile: "off",
+                hideArrowsOnMobile: "off",
+                hideThumbsUnderResolution: 0,
+
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                startWithSlide: 0,
+                fullScreenOffsetContainer: ""
+            });
+
+        });
+        //ready
+
+        //$.scrollUp();
+    </script>
+
+    <script>
+        @*scrolling animate*@
+        $(document).ready(function () {
+            $(".scrollingLink").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

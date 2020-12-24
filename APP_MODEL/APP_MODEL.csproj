@@ -1,0 +1,1112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{056BCC62-D607-4DFC-A7B9-C59D3223E241}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APP_MODEL</RootNamespace>
+    <AssemblyName>APP_MODEL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ModelData\checkExistingObject_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\checkUploadedFileNew_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\generateReport_1721_A1_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\generateReport_1721_Bulanan_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\generateReport_1721_Final_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\generateReport_1721_Tidak_Final_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\generateReport_FundRequisition_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\GenerateReport_PayrollComparative_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\GenerateReport_SalaryJournalAdditional_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\GenerateReport_SalaryJournal_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Generate_BPJS_TK_Employee_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get.cs" />
+    <Compile Include="ModelData\Audit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModelData\checkUploadedFile_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Check_Payroll_Period_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Employee_Attendance_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Employee_By_Period_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Employee_Master_Data_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Employee_Report_Attendance_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Employee_Report_Claim_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Employee_Report_Leave_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Employee_Report_Overtime_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_EmpPayCompAsTaxDeduction_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Organization_Attendance_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Payroll_Period_NP_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Payroll_Period_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Payslip_Employee_Information_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_ReportEmpoyeePayrollHistory_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_ReportSummaryHistory_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Report_Attendance_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Report_Claim_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Report_Employee_History_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Report_Employee_Information_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Report_Leave_Entitlement_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Report_Leave_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Report_Overtime_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Summary_Record_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Get_Tax_Bracket_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\GlobalModel.cs" />
+    <Compile Include="ModelData\GlobalModelWSPayment.cs" />
+    <Compile Include="ModelData\MetaModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModelData\ModelDataEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDataEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\ModelDataEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\ModelDataEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDataEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\PartialModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModelData\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Additional_Payroll.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Additional_Payroll_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Apply_Leave.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Apply_Leave_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Appointment_Contract_Information.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Appointment_Department.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Appointment_Division.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Appointment_Grade.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Appointment_Position.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Appointment_Status_Information.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Appointment_Working_Time.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Appointment_Work_Location.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Attendance_Device.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Attendance_History_Upload.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Attendance_Mapping_DeviceOrg.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Attendance_Priority.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Attendance_Request.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Attendance_Rules.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Attendance_Summary_Sync.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Audit_Trail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Bank_Information.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Base_Location.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Base_Location_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Base_Location_Header.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Blog_Posts.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_BPJS_Healthcare.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_BPJS_Manpower.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Branch_List_Of_Bank.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Bukti_Potong_Permanent.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Chart_Account.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Chat_Account.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Chat_Log.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Client_Organization_Service_Role.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Client_Organization_Team.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Compensation_Benefit.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Config_Table_Header.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Contact_Person.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Contact_Support.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Cost_Center.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Cost_Parameter.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Currency.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Current_Version.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Customer_Notice.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Cut_Off_Period.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Address.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Appointment.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Approval.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Claim.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Document.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Family.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_ID_Information.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Leave_Entitlement.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Leave_Entitlement_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Leave_Entitlement_Restriction.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Overtime.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Overtime_Tier.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Payment.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Payroll_Component.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Employee_Payroll_Component_Effective.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Error_Code.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Error_Log.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Exchange_File.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Exchange_Rate.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Exchange_Rate_Details.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Function.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_General_Number.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_General_Parameter.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Generate_Bank_File.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Generate_Bank_File_Details.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Generate_Bank_File_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Generate_Bank_File_Template_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Generate_Bank_File_Template_Header.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_HeadOffice_Branch.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_HeadOffice_Branch_Location.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_History_User.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Hist_Organization_Menu.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Hist_Role.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Hist_Role_Menu.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Holiday_Calendar.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Holiday_Calendar_Organization.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Holiday_Calendar_Organization_Details.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_ID_Number.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Job_Code.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Job_Function.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Job_Title.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Language.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Leave_History.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Leave_Types.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_List_Of_Bank.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Loan.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Log_System.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Log_WebService.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Map_Location.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Menu.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Menu_Blog.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Menu_Ess.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Menu_Function.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Menu_Function_Restriction.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Menu_Icon_Mobile.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Menu_Restriction.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Message.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Mobile_Captha.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Nationality.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Non_Taxable_Income_Parameter.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Notification_Log.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Notification_Template.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Order.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Order_Promotion_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Order_Tiering_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Account_Group_Maintenence.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Branch_NPWP.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Email_Setup.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Group.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Group_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Menu.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Payroll_Component.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Service_Role.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Signature.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Structure.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Team.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_User.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Organization_Working_Time.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Package_Pricing.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Additional.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Calculation.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Calculation_Component.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Calculation_Component_Ex.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Calculation_Employee.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Calculation_Employee_Ex.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Calculation_Log.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Closing.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Period.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Period_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Schedule.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Slip.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Slip_Component.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Slip_Employee.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Tax_Calculation_Np.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Tax_Correction.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Transaction.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Variable.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payroll_Variable_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payslip.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payslip_Setting.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payslip_Template.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Payslip_Template_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Promotion.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Reminder.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Reminder_Employee.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Reminder_User.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Column.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Employee.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Layout.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Payroll_Calculation.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Payroll_Calculation_Details.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Setting.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Setting_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Tax_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Report_Template.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Role.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Role_Menu.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Salary_Grade.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Service_Role.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Session_Login.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Session_Mobile.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_SysParam.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Tax.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Tax_Object_Code.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Tax_Period.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Tax_Period_Month.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Tax_Rate_Parameter.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Tax_Status_Effective_Year.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Third_Party.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Third_Party_Content.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Third_Party_Employee.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Third_Party_Log.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Tiering.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Timeline_Mobile.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Trx_Bank_Transfer.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Trx_Bank_Transfer_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Upload_Mapping.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Upload_Staging.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Upload_Staging_Detail.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Upload_Staging_Header.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_User.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_User_Attendance.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_User_Mobile.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_User_Order.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_User_Organization_Team.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_User_Role.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_User_Trial.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Workflow_Status.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\tbl_Work_Location.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\Validate_Recalculate_OnHistory_Result.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Additional_Payroll.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_appointment_information.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Attendance_Finger_ID.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Attendance_Leave.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Attendance_Request_Details.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Attendance_Summary_Sync.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_AuditTrails.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Bank_Employee.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Base_Location.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Base_Location_All.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Base_Location_List.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Blog_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Calculation_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Calculation_Tax_All.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Calculation_Tax_History.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Calculation_Transaction.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Calculation_Transaction_Approved.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Chat_Account.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Chat_Log.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Compensation_Benefit.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Download_Employee_Payroll_Component.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Download_Organization_Payroll_Component.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Appointment_Actual.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Appointment_Status.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Appointment_Status_ALL.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Appointment_WorkingTime.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Appointment_Work_Location.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Approval.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Component_Formula.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Leave.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Leave_Entitlement_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Payroll_Component.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Payslip_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Employee_Tax_Status.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Generate_Bank_File.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Generate_Bank_File_Details.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Generate_Bank_File_Details_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Generate_Bank_File_Template.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Leave_Employee.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Loan.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Login_Epayslip.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Menu_Function.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_New_BPJS_Manpower.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Organization_Email_Setup_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Organization_Menu.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Organization_Menu_Function.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Organization_Payroll_Component_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Aditional.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Calculation_Period.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Detail_Calculation.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Payment_Details.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Payment_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Period.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Period_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Slip_Description_Employee.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Slip_Employee_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Slip_List_Bank.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Tax_Calculation_Approved.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Payroll_Variable.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Report_Employee_Information.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Report_Employee_JKK.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Report_Employee_Payroll_History.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Report_Employee_Tax_Component.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Report_Setting.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Report_Summary_History.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_role.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Role_Menu.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Role_Menu_Function.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Role_Organization_Menu_Function.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Run_Closing.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_SessionKey.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_TaxPeriodMonth.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Tax_Period_Summary.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Team.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Timeline_Mobile.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Trx_Bank_Transfer.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Upload_Mapping.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Upload_Staging_Header.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_user.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_User_Menu.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_User_Mobile.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_user_organization.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_User_Report_Attendance.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_User_Role.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_User_Role_Menu.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_User_Role_Menu_Function.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData\vw_Work_Location.cs">
+      <DependentUpon>ModelDataEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EntityDeploy Include="ModelData\ModelDataEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelDataEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ModelData\ModelDataEntities.edmx.diagram">
+      <DependentUpon>ModelDataEntities.edmx</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelData\ModelDataEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDataEntities.edmx</DependentUpon>
+      <LastGenOutput>ModelDataEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelData\ModelDataEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDataEntities.edmx</DependentUpon>
+      <LastGenOutput>ModelDataEntities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

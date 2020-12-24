@@ -1,0 +1,135 @@
+﻿.content-wrapHeaderPage {
+    position: relative;
+    padding: 30px 0;
+}
+
+.pricing-action {
+    padding: 15px 5px;
+}
+
+.mfp-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 38px 8px;
+    box-sizing: border-box;
+}
+
+.pricing-price {
+    position: relative;
+    padding: 25px 0;
+    color: #333;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1;
+}
+
+.testimonial-full .testi-content p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    color: #777;
+    font-style: normal;
+    margin: 15px 0 30px 0;
+    line-height: 1.6;
+}
+
+.pricing-price {
+    position: relative;
+    padding: 20px 0;
+    color: #333;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.slider-caption-bg {
+    padding: 5px 8px;
+    padding-left: 27px;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.6);
+    /*top: auto;
+    bottom: 50px;
+    left: 50px;*/
+}
+
+.image-testimoni {
+    border-radius: 25px;
+    border: 0px solid black;
+    /*padding: 5px;
+    margin-bottom: 40px;*/
+}
+
+.testi-content p:before,
+.testi-content p:after {
+    content: '';
+}
+
+@charset "utf-8";
+/* CSS Document */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .fonts {
+        font-size: 75%;
+    }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    .fonts {
+        font-size: 120%;
+    }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    .fonts {
+        font-size: 120%;
+    }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .fonts {
+        font-size: 120%;
+    }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .fonts {
+        font-size: 150%;
+    }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+    .fonts {
+        font-size: 120%;
+    }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .fonts {
+        font-size: 240%;
+    }
+
+    .testimoni-image-cos {
+        border-radius: 8px;
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    .fonts {
+        font-size: 200%;
+    }
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+    .fonts {
+        font-size: 149%;
+    }
+}
